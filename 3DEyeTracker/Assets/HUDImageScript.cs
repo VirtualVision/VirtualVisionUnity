@@ -79,6 +79,16 @@ public class HUDImageScript : MonoBehaviour {
 	// 
 	void Update () {
 		AsyncIO.ForceDotNet.Force();
+		string top;
+		string message;
+		if (client.TryReceiveFrameString (out top)) {
+			if(client.TryReceiveFrameString (out message)){
+				Debug.Log (message);
+				string[] coord = message.Split ();
+				transX = int.Parse (coord [0]);
+				transY = int.Parse (coord [1]);
+			}
+		}
 		if (Input.GetKeyDown(KeyCode.Space)){
 			calCount++;
 		}
@@ -91,12 +101,6 @@ public class HUDImageScript : MonoBehaviour {
 				isVisible = true;
 				targetPrefab.SetActive(true);
 				server.SendMore("coord").Send ("200 200");
-				string top = client.ReceiveString ();
-				string message = client.ReceiveString ();
-				Debug.Log (message);
-				string[] coord = message.Split ();
-				transX = int.Parse (coord [0]);
-				transY = int.Parse (coord [1]);
 			}
 		}
 
