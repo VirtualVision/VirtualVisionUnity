@@ -56,6 +56,7 @@
      <Compile Include="Assets\CurvedUI\Scripts\Spin.cs" />
      <Compile Include="Assets\CurvedUI\Scripts\TessellationVertexEffect.cs" />
      <Compile Include="Assets\HUDImageScript.cs" />
+     <Compile Include="Assets\HUDPluginImageScript.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPostRender.cs" />
