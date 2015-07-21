@@ -24,27 +24,13 @@ limitations under the License.
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using UnityEngine;
 
+/// <summary>
+/// Helper class with debug assertions.
+/// </summary>
 public static class OVRDebugUtils
 {
-#if UNITY_ANDROID && !UNITY_EDITOR
-	/// <summary>
-	/// When running on adroid and connected via adb (either USB of WIFI), you can
-	/// use logcat to see output from OVRDebugUtils.Print.  To do so use the following
-	/// command at a command prompt / shell:
-	/// adb logcat -s OVRDEBUG
-	/// </summary>
-	static string debugTag = "OVRDEBUG";
-	
-	[DllImport("OculusPlugin")]
-	private static extern int OVR_DebugPrint(string tag, string message);
-	
-	public static void SetDebugTag(string tag)
-	{
-		debugTag = tag;
-	}
-#endif
-
 	/// <summary>
 	/// Throws an exception if the condition is false and prints the
 	/// the stack for the calling function.
@@ -56,8 +42,7 @@ public static class OVRDebugUtils
 		{
 			StackTrace st = new StackTrace(new StackFrame(true));
 			StackFrame sf = st.GetFrame(1);
-			Print("Assertion( " + exprTag + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
-			throw new Exception();
+			throw new Exception("Assertion( " + exprTag + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
 		}
     }
 
@@ -68,20 +53,8 @@ public static class OVRDebugUtils
 		{
 			StackTrace st = new StackTrace(new StackFrame(true));
 			StackFrame sf = st.GetFrame(1);
-			Print("Assertion( " + sf.ToString() + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
+			UnityEngine.Debug.LogError("Assertion( " + sf.ToString() + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
 			throw new Exception();
 		}
-	}
-
-	/// <summary>
-	/// Prints a message to the Unity console, or to the debug log on Android.
-	/// </summary>
-	public static void Print(string message)
-	{
-#if UNITY_ANDROID && !UNITY_EDITOR
-		OVR_DebugPrint(debugTag, message);
-#else
-		UnityEngine.Debug.LogWarning(message);
-#endif
 	}
 };

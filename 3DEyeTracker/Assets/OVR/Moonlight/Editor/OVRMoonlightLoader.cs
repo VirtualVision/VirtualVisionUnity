@@ -32,6 +32,16 @@ class OVRMoonlightLoader
 {
     static OVRMoonlightLoader()
 	{
+		var mgrs = GameObject.FindObjectsOfType<OVRManager>().Where(m => m.isActiveAndEnabled);
+
+		EditorApplication.update += EnforceBundleId;
+
+		if (mgrs.Count() != 0 && !PlayerSettings.virtualRealitySupported)
+		{
+			Debug.Log("Enabling Unity VR support");
+			PlayerSettings.virtualRealitySupported = true;
+		}
+
 		if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
 			return;
 
@@ -42,15 +52,21 @@ class OVRMoonlightLoader
 			PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
 		}
 
-		// NOTE: On Adreno Lollipop, it is an error to have antiAliasing set on the
-		// main window surface with front buffer rendering enabled. The view will
-		// render black.
-		// On Adreno KitKat, some tiling control modes will cause the view to render
-		// black.
-		if (QualitySettings.antiAliasing != 0 && QualitySettings.antiAliasing != 1)
+		if (!PlayerSettings.virtualRealitySupported)
 		{
-			Debug.Log("MoonlightLoader: Disabling antiAliasing");
-			QualitySettings.antiAliasing = 1;
+			// NOTE: This value should not affect the main window surface
+			// when Built-in VR support is enabled.
+
+			// NOTE: On Adreno Lollipop, it is an error to have antiAliasing set on the
+			// main window surface with front buffer rendering enabled. The view will
+			// render black.
+			// On Adreno KitKat, some tiling control modes will cause the view to render
+			// black.
+			if (QualitySettings.antiAliasing != 0 && QualitySettings.antiAliasing != 1)
+			{
+				Debug.Log("MoonlightLoader: Disabling antiAliasing");
+				QualitySettings.antiAliasing = 1;
+			}
 		}
 
 		if (QualitySettings.vSyncCount != 0)
@@ -58,6 +74,19 @@ class OVRMoonlightLoader
 			Debug.Log("MoonlightLoader: Setting vsyncCount to 0");
 			// We sync in the TimeWarp, so we don't want unity syncing elsewhere.
 			QualitySettings.vSyncCount = 0;
+		}
+	}
+
+	private static void EnforceBundleId()
+	{
+		if (!PlayerSettings.virtualRealitySupported)
+			return;
+
+		if (PlayerSettings.bundleIdentifier == "" || PlayerSettings.bundleIdentifier == "com.Company.ProductName")
+		{
+			string defaultBundleId = "com.oculus.UnitySample";
+			Debug.LogWarning("\"" + PlayerSettings.bundleIdentifier + "\" is not a valid bundle identifier. Defaulting to \"" + defaultBundleId + "\".");
+			PlayerSettings.bundleIdentifier = defaultBundleId;
 		}
 	}
 }

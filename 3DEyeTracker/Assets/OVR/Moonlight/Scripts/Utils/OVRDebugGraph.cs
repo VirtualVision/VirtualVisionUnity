@@ -20,27 +20,44 @@ limitations under the License.
 ************************************************************************************/
 
 using UnityEngine;
-using System.Runtime.InteropServices; // required for DllImport
+using VR = UnityEngine.VR;
 
+/// <summary>
+/// Toggles an on-screen debug graph with VR rendering and performance statistics.
+/// </summary>
 public class OVRDebugGraph : MonoBehaviour
 {
-	public OVRTimeWarpUtils.DebugPerfMode debugMode = OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_OFF;
-	public OVRGamepadController.Button toggleButton = OVRGamepadController.Button.Start;
+	public enum DebugPerfMode
+	{
+		DEBUG_PERF_OFF,         // data still being collected, just not displayed
+		DEBUG_PERF_RUNNING,     // display continuously changing graph
+		DEBUG_PERF_FROZEN,      // no new data collection, but displayed
+		DEBUG_PERF_MAX,
+	}
 
-#if (UNITY_ANDROID && !UNITY_EDITOR)
-	[DllImport("OculusPlugin")]
-	private static extern void OVR_TW_SetDebugMode(OVRTimeWarpUtils.DebugPerfMode mode, OVRTimeWarpUtils.DebugPerfValue val);
-#endif
+	/// <summary>
+	/// The current display mode.
+	/// </summary>
+	public DebugPerfMode debugMode = DebugPerfMode.DEBUG_PERF_OFF;
+
+	/// <summary>
+	/// The gamepad button that will toggle the display mode.
+	/// </summary>
+	public OVRGamepadController.Button toggleButton = OVRGamepadController.Button.Start;
 
 	/// <summary>
 	/// Initialize the debug mode
 	/// </summary>
 	void Start()
 	{
-#if UNITY_ANDROID && !UNITY_EDITOR
-		// Turn on/off debug graph
-		OVR_TW_SetDebugMode(debugMode, OVRTimeWarpUtils.DebugPerfValue.DEBUG_VALUE_DRAW);
-#endif
+		if (!VR.VRDevice.isPresent)
+		{
+			enabled = false;
+			return;
+		}
+
+		OVRPlugin.debugDisplay = (debugMode != DebugPerfMode.DEBUG_PERF_OFF);
+		OVRPlugin.collectPerf = (debugMode == DebugPerfMode.DEBUG_PERF_FROZEN);
 	}
 
 	/// <summary>
@@ -50,7 +67,7 @@ public class OVRDebugGraph : MonoBehaviour
 	void Update()
 	{
 		// NOTE: some of the buttons defined in OVRGamepadController.Button are not available on the Android game pad controller
-		if (Input.GetButtonDown( OVRGamepadController.ButtonNames[(int)toggleButton]))
+		if (OVRGamepadController.GPC_GetButtonDown( toggleButton ))
 		{
 			Debug.Log(" TOGGLE GRAPH ");
 
@@ -59,20 +76,20 @@ public class OVRDebugGraph : MonoBehaviour
 			//*************************
 			switch (debugMode)
 			{
-				case OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_OFF:
-					debugMode = OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_RUNNING;
+				case DebugPerfMode.DEBUG_PERF_OFF:
+					debugMode = DebugPerfMode.DEBUG_PERF_RUNNING;
 					break;
-				case OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_RUNNING:
-					debugMode = OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_FROZEN;
+				case DebugPerfMode.DEBUG_PERF_RUNNING:
+					debugMode = DebugPerfMode.DEBUG_PERF_FROZEN;
 					break;
-				case OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_FROZEN:
-					debugMode = OVRTimeWarpUtils.DebugPerfMode.DEBUG_PERF_OFF;
+				case DebugPerfMode.DEBUG_PERF_FROZEN:
+					debugMode = DebugPerfMode.DEBUG_PERF_OFF;
 					break;
 			}
-
-#if UNITY_ANDROID && !UNITY_EDITOR
-			OVR_TW_SetDebugMode(debugMode, OVRTimeWarpUtils.DebugPerfValue.DEBUG_VALUE_DRAW);
-#endif
+			
+			// Turn on/off debug graph
+			OVRPlugin.debugDisplay = (debugMode != DebugPerfMode.DEBUG_PERF_OFF);
+			OVRPlugin.collectPerf = (debugMode == DebugPerfMode.DEBUG_PERF_FROZEN);
 		}
 	}
 }

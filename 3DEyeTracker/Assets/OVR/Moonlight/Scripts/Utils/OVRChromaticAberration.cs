@@ -20,47 +20,36 @@ limitations under the License.
 ************************************************************************************/
 
 using UnityEngine;
-using System.Runtime.InteropServices;		// required for DllImport
 
-public class OVRChromaticAberration : MonoBehaviour {
-	
+/// <summary>
+/// Allows you to toggle chromatic aberration correction with a gamepad button press.
+/// </summary>
+public class OVRChromaticAberration : MonoBehaviour
+{
+	/// <summary>
+	/// The button that will toggle chromatic aberration correction.
+	/// </summary>
 	public OVRGamepadController.Button			toggleButton = OVRGamepadController.Button.X;	
 
 	private bool								chromatic = false;
 
-#if (UNITY_ANDROID && !UNITY_EDITOR)
-	[DllImport("OculusPlugin")]
-	private static extern void OVR_TW_EnableChromaticAberration( bool enable );
-#endif
-
-	/// <summary>
-	/// Start this instance.
-	/// </summary>
 	void Start ()
 	{
-#if (UNITY_ANDROID && !UNITY_EDITOR)
 		// Enable/Disable Chromatic Aberration Correction.
 		// NOTE: Enabling Chromatic Aberration for mobile has a large performance cost.
-		OVR_TW_EnableChromaticAberration(chromatic);
-#endif
+		OVRManager.instance.chromatic = chromatic;
 	}
 
-	/// <summary>
-	/// Check input and toggle chromatic aberration correction if necessary.
-	/// See the input mapping setup in the Unity Integration guide.
-	/// </summary>
 	void Update()
 	{
 		// NOTE: some of the buttons defined in OVRGamepadController.Button are not available on the Android game pad controller
-		if (Input.GetButtonDown(OVRGamepadController.ButtonNames[(int)toggleButton]))
+		if (OVRGamepadController.GPC_GetButtonDown(toggleButton))
 		{
 			//*************************
 			// toggle chromatic aberration correction
 			//*************************
 			chromatic = !chromatic;
-#if (UNITY_ANDROID && !UNITY_EDITOR)
-			OVR_TW_EnableChromaticAberration(chromatic);
-#endif
+			OVRManager.instance.chromatic = chromatic;
 		}
 	}
 

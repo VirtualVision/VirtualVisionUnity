@@ -39,6 +39,9 @@ public static class OVRTouchpad
 	   	Down,
 	};
 
+	/// <summary>
+	/// Details about a touch event.
+	/// </summary>
 	public class TouchArgs : EventArgs
 	{
 		public TouchEvent TouchType;

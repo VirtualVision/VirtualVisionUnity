@@ -22,7 +22,7 @@ limitations under the License.
 using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
-using Ovr;
+using VR = UnityEngine.VR;
 
 /// <summary>
 /// An infrared camera that tracks the position of a head-mounted display.
@@ -53,14 +53,11 @@ public class OVRTracker
 	/// </summary>
 	public bool isPresent
 	{
-	    get {
-#if !UNITY_ANDROID || UNITY_EDITOR
-			if (OVRManager.instance.isVRPresent)
-			{
-				return (OVRManager.capiHmd.GetTrackingState(0f).StatusFlags & (uint)StatusBits.PositionConnected) != 0;
-			}
-#endif
-			return false;
+		get {
+			if (!VR.VRDevice.isPresent)
+				return false;
+
+			return OVRPlugin.positionSupported;
 		}
 	}
 
@@ -70,13 +67,7 @@ public class OVRTracker
 	public bool isPositionTracked
 	{
 		get {
-#if !UNITY_ANDROID || UNITY_EDITOR
-			if (OVRManager.instance.isVRPresent)
-			{
-				return (OVRManager.capiHmd.GetTrackingState(0f).StatusFlags & (uint)StatusBits.PositionTracked) != 0;
-			}
-#endif
-			return false;
+			return OVRPlugin.positionTracked;
 		}
 	}
 
@@ -86,28 +77,17 @@ public class OVRTracker
 	public bool isEnabled
 	{
 		get {
-#if !UNITY_ANDROID || UNITY_EDITOR
-			if (OVRManager.instance.isVRPresent)
-			{
-			uint trackingCaps = OVRManager.capiHmd.GetDesc().TrackingCaps;
-			return (trackingCaps & (uint)TrackingCaps.Position) != 0;
-			}
-#endif
-			return false;
-		}
+			if (!VR.VRDevice.isPresent)
+				return false;
+
+			return OVRPlugin.position;
+        }
 
 		set {
-#if !UNITY_ANDROID || UNITY_EDITOR
-			if (OVRManager.instance.isVRPresent)
+			if (!VR.VRDevice.isPresent)
 				return;
 
-			uint trackingCaps = (uint)TrackingCaps.Orientation | (uint)TrackingCaps.MagYawCorrection;
-
-			if (value)
-				trackingCaps |= (uint)TrackingCaps.Position;
-
-			OVRManager.capiHmd.ConfigureTracking(trackingCaps, 0);
-#endif
+			OVRPlugin.position = value;
 		}
 	}
 
@@ -117,25 +97,10 @@ public class OVRTracker
 	public Frustum frustum
 	{
 		get {
-#if !UNITY_ANDROID || UNITY_EDITOR
-			if (OVRManager.instance.isVRPresent)
-			{
-			HmdDesc desc = OVRManager.capiHmd.GetDesc();
+			if (!VR.VRDevice.isPresent)
+				return new Frustum();
 
-			return new Frustum
-			{
-				nearZ = desc.CameraFrustumNearZInMeters,
-				farZ = desc.CameraFrustumFarZInMeters,
-				fov = Mathf.Rad2Deg * new Vector2(desc.CameraFrustumHFovInRadians, desc.CameraFrustumVFovInRadians)
-			};
-			}
-#endif
-			return new Frustum
-			{
-				nearZ = 0.1f,
-				farZ = 1000.0f,
-				fov = new Vector2(90.0f, 90.0f)
-			};
+            return OVRPlugin.GetTrackerFrustum(OVRPlugin.Tracker.Default).ToFrustum();
 		}
 	}
 
@@ -144,18 +109,15 @@ public class OVRTracker
 	/// </summary>
 	public OVRPose GetPose(double predictionTime)
 	{
-#if !UNITY_ANDROID || UNITY_EDITOR
-		if (OVRManager.instance.isVRPresent)
-		{
-		double abs_time_plus_pred = Hmd.GetTimeInSeconds() + predictionTime;
+		if (!VR.VRDevice.isPresent)
+			return OVRPose.identity;
 
-		return OVRManager.capiHmd.GetTrackingState(abs_time_plus_pred).CameraPose.ToPose(true);
-		}
-#endif
-		return new OVRPose
+		var p = OVRPlugin.GetTrackerPose(OVRPlugin.Tracker.Default).ToOVRPose();
+		
+		return new OVRPose()
 		{
-			position = Vector3.zero,
-			orientation = Quaternion.identity
+			position = p.position,
+			orientation = p.orientation * Quaternion.Euler(0, 180, 0)
 		};
 	}
 }

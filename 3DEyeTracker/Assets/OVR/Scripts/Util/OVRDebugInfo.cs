@@ -22,10 +22,11 @@ limitations under the License.
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using VR = UnityEngine.VR;
 
 //-------------------------------------------------------------------------------------
 /// <summary>
-/// Class for showing debug information
+/// Shows debug information on a heads-up display.
 /// </summary>
 public class OVRDebugInfo : MonoBehaviour
 {
@@ -33,27 +34,24 @@ public class OVRDebugInfo : MonoBehaviour
     GameObject debugUIManager;
     GameObject debugUIObject;
     GameObject riftPresent;    
-    GameObject visionMode;
     GameObject fps;    
     GameObject ipd;
     GameObject fov;
     GameObject height;
-    GameObject speedRotationMutipler;
-    GameObject resolutionEyeTexture;
+	GameObject depth;
+	GameObject resolutionEyeTexture;
     GameObject latencies;
-    GameObject riftPresentGUIObject;
     GameObject texts;    
     #endregion
 
     #region Debug strings
 	string strRiftPresent            = null; // "VR DISABLED"
-    string strVisionMode             = null; // "Vision Enabled: ON";
     string strFPS                    = null; // "FPS: 0";
     string strIPD                    = null; // "IPD: 0.000";
     string strFOV                    = null; // "FOV: 0.0f";
     string strHeight                 = null; // "Height: 0.0f";
-    string strSpeedRotationMultipler = null; // "Spd. X: 0.0f Rot. X: 0.0f";
-    string strResolutionEyeTexture   = null; // "Resolution : {0} x {1}"
+	string strDepth                  = null; // "Depth: 0.0f";
+	string strResolutionEyeTexture   = null; // "Resolution : {0} x {1}"
     string strLatencies              = null; // "R: {0:F3} TW: {1:F3} PP: {2:F3} RE: {3:F3} TWE: {4:F3}"
     #endregion
 
@@ -79,18 +77,12 @@ public class OVRDebugInfo : MonoBehaviour
     /// <summary>
     /// Managing for rift detection UI
     /// </summary>
-    bool  hmdPresent         = false;
     float riftPresentTimeout = 0.0f;
 
     /// <summary>
     /// Turn on / off VR variables
     /// </summary>
     bool showVRVars = false;
-
-    /// <summary>
-    /// Check if OVRPlayerController is attached or not
-    /// </summary>
-    OVRPlayerController playerController = null;
 
     #region MonoBehaviour handler
 
@@ -113,9 +105,6 @@ public class OVRDebugInfo : MonoBehaviour
         Canvas canvas = debugUIManager.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.WorldSpace;
         canvas.pixelPerfect = false;
-
-        // Check if Rift attached
-        CheckIfRiftPresent();
     }
 
     /// <summary>
@@ -157,15 +146,6 @@ public class OVRDebugInfo : MonoBehaviour
         isInited = false;
     }
     #endregion
-    
-    /// <summary>
-    /// Sets the OVR player controller.
-    /// </summary>
-    /// <param name="ovrPlayerController">player controller.</param>
-    public void SetPlayerController(ref OVRPlayerController ovrPlayerController)
-    {
-        playerController = ovrPlayerController;
-    }
 
     #region Private Functions
     /// <summary>
@@ -182,12 +162,6 @@ public class OVRDebugInfo : MonoBehaviour
         debugUIObject.transform.localPosition = new Vector3(0.0f, 100.0f, 0.0f);
         debugUIObject.transform.localEulerAngles = Vector3.zero;
         debugUIObject.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-
-        // Print out for VisionMode
-        if (!string.IsNullOrEmpty(strVisionMode))
-        {
-            visionMode = VariableObjectManager(visionMode, "VisionMode", posY -= offsetY, strVisionMode, fontSize);
-        }
 
         // Print out for FPS
         if (!string.IsNullOrEmpty(strFPS))
@@ -207,22 +181,19 @@ public class OVRDebugInfo : MonoBehaviour
             fov = VariableObjectManager(fov, "FOV", posY -= offsetY, strFOV, fontSize);
         }
 
-        if (playerController != null)
+        // Print out for Height
+        if (!string.IsNullOrEmpty(strHeight))
         {
-            // Print out for Height
-            if (!string.IsNullOrEmpty(strHeight))
-            {
-                height = VariableObjectManager(height, "Height", posY -= offsetY, strHeight, fontSize);
-            }
-
-            // Print out for Speed Rotation Multiplier
-            if (!string.IsNullOrEmpty(strSpeedRotationMultipler))
-            {
-                speedRotationMutipler = VariableObjectManager(speedRotationMutipler, "SpeedRotationMutipler", posY -= offsetY, strSpeedRotationMultipler, fontSize);
-            }
+            height = VariableObjectManager(height, "Height", posY -= offsetY, strHeight, fontSize);
         }
+		
+		// Print out for Depth
+		if (!string.IsNullOrEmpty(strDepth))
+		{
+			depth = VariableObjectManager(depth, "Depth", posY -= offsetY, strDepth, fontSize);
+		}
 
-        // Print out for Resoulution of Eye Texture
+		// Print out for Resoulution of Eye Texture
         if (!string.IsNullOrEmpty(strResolutionEyeTexture))
         {
             resolutionEyeTexture = VariableObjectManager(resolutionEyeTexture, "Resolution", posY -= offsetY, strResolutionEyeTexture, fontSize);
@@ -247,7 +218,8 @@ public class OVRDebugInfo : MonoBehaviour
     {        
         UpdateIPD();
         UpdateEyeHeightOffset();
-        UpdateFOV();
+		UpdateEyeDepthOffset();
+		UpdateFOV();
         UpdateResolutionEyeTexture();
         UpdateLatencyValues();
         UpdateFPS();       
@@ -261,8 +233,6 @@ public class OVRDebugInfo : MonoBehaviour
         if (debugUIObject == null)
             return;       
                 
-        if (!string.IsNullOrEmpty(strVisionMode))
-            visionMode.GetComponentInChildren<Text>().text = strVisionMode;
         if (!string.IsNullOrEmpty(strFPS))
             fps.GetComponentInChildren<Text>().text = strFPS;
         if (!string.IsNullOrEmpty(strIPD))
@@ -272,18 +242,17 @@ public class OVRDebugInfo : MonoBehaviour
         if (!string.IsNullOrEmpty(strResolutionEyeTexture))
             resolutionEyeTexture.GetComponentInChildren<Text>().text = strResolutionEyeTexture;
         if (!string.IsNullOrEmpty(strLatencies))
+		{
             latencies.GetComponentInChildren<Text>().text = strLatencies;
-
-        if (playerController != null)
-        {
-            if (!string.IsNullOrEmpty(strHeight))
-                height.GetComponentInChildren<Text>().text = strHeight;
-            if (!string.IsNullOrEmpty(strSpeedRotationMultipler))
-                speedRotationMutipler.GetComponentInChildren<Text>().text = strSpeedRotationMultipler;
-        }
-    }
-  
-    /// <summary>
+			latencies.GetComponentInChildren<Text>().fontSize = 14;
+		}
+        if (!string.IsNullOrEmpty(strHeight))
+            height.GetComponentInChildren<Text>().text = strHeight;
+		if (!string.IsNullOrEmpty(strDepth))
+			depth.GetComponentInChildren<Text>().text = strDepth;
+	}
+	
+	/// <summary>
     /// It's for rift present GUI
     /// </summary>
     void RiftPresentGUI(GameObject guiMainOBj)
@@ -299,26 +268,6 @@ public class OVRDebugInfo : MonoBehaviour
         Text text = riftPresent.GetComponentInChildren<Text>();
         text.text = strRiftPresent;
         text.fontSize = 20;
-    }  
-
-    /// <summary>
-    ///  Show UI for device detection
-    /// </summary>
-    void ShowRiftPresentGUI()
-    {
-        riftPresentGUIObject = new GameObject();
-        riftPresentGUIObject.name = "RiftPresent";
-        riftPresentGUIObject.transform.parent = GameObject.Find("LeftEyeAnchor").transform;
-
-        RectTransform rectTransform = riftPresentGUIObject.AddComponent<RectTransform>();
-        rectTransform.sizeDelta = new Vector2(100f, 100f);
-        rectTransform.localPosition = new Vector3(0.01f, 0.17f, 0.53f);
-        rectTransform.localEulerAngles = Vector3.zero;
-        rectTransform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
-        Canvas canvas = riftPresentGUIObject.AddComponent<Canvas>();
-        canvas.renderMode = RenderMode.WorldSpace;
-        canvas.pixelPerfect = false;
-        RiftPresentGUI(riftPresentGUIObject);
     }
 
     /// <summary>
@@ -329,11 +278,6 @@ public class OVRDebugInfo : MonoBehaviour
         if (riftPresentTimeout >= 0.0f)
         {
             riftPresentTimeout -= Time.deltaTime;
-        }
-
-        if (riftPresentTimeout < 0.0f)
-        {
-            DestroyImmediate(riftPresentGUIObject);
         }
     }
 
@@ -378,7 +322,7 @@ public class OVRDebugInfo : MonoBehaviour
         texts.AddComponent<CanvasRenderer>();
         texts.AddComponent<Text>();
         texts.GetComponent<RectTransform>().sizeDelta = new Vector2(350f, 50f);
-        texts.GetComponent<Text>().font = (Font)Resources.Load("DINPro-Bold");
+		texts.GetComponent<Text>().font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
         texts.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
 
         texts.transform.SetParent(GO.transform);
@@ -404,23 +348,24 @@ public class OVRDebugInfo : MonoBehaviour
     {
         float eyeHeight = OVRManager.profile.eyeHeight;
         strHeight = System.String.Format("Eye Height (m): {0:F3}", eyeHeight);
-    }
-
-    /// <summary>
-    /// Updates the FOV.
+	}
+	
+	/// <summary>
+	/// Updates the eye depth offset.
+	/// </summary>
+	void UpdateEyeDepthOffset()
+	{
+		float eyeDepth = OVRManager.profile.eyeDepth;
+		strDepth = System.String.Format("Eye Depth (m): {0:F3}", eyeDepth);
+	}
+	
+	/// <summary>
+	/// Updates the FOV.
     /// </summary>
     void UpdateFOV()
     {
-        OVRDisplay.EyeRenderDesc eyeDesc = OVRManager.display.GetEyeRenderDesc(OVREye.Left);
+        OVRDisplay.EyeRenderDesc eyeDesc = OVRManager.display.GetEyeRenderDesc(VR.VRNode.LeftEye);
         strFOV = System.String.Format("FOV (deg): {0:F3}", eyeDesc.fov.y);   
-    }
-
-    /// <summary>
-    /// Updates the vision mode.
-    /// </summary>
-    public void UpdateVisionMode(bool visionModeOn)
-    {
-        strVisionMode = visionModeOn ? "Vision Enabled: ON" : "Vision Enabled: OFF";
     }
 
     /// <summary>
@@ -428,10 +373,10 @@ public class OVRDebugInfo : MonoBehaviour
     /// </summary>
     void UpdateResolutionEyeTexture()
     {
-        OVRDisplay.EyeRenderDesc leftEyeDesc = OVRManager.display.GetEyeRenderDesc(OVREye.Left);
-        OVRDisplay.EyeRenderDesc rightEyeDesc = OVRManager.display.GetEyeRenderDesc(OVREye.Right);
+		OVRDisplay.EyeRenderDesc leftEyeDesc = OVRManager.display.GetEyeRenderDesc(VR.VRNode.LeftEye);
+		OVRDisplay.EyeRenderDesc rightEyeDesc = OVRManager.display.GetEyeRenderDesc(VR.VRNode.RightEye);
 
-        float scale = OVRManager.instance.virtualTextureScale;
+		float scale = VR.VRSettings.renderScale;
         float w = (int)(scale * (float)(leftEyeDesc.resolution.x + rightEyeDesc.resolution.x));
         float h = (int)(scale * (float)Mathf.Max(leftEyeDesc.resolution.y, rightEyeDesc.resolution.y));
 
@@ -448,7 +393,7 @@ public class OVRDebugInfo : MonoBehaviour
             if (latency.render < 0.000001f && latency.timeWarp < 0.000001f && latency.postPresent < 0.000001f)
                 strLatencies = System.String.Format("Latency values are not available.");
             else
-                strLatencies = System.String.Format("R: {0:F3} TW: {1:F3} PP: {2:F3} RE: {3:F3} TWE: {4:F3}",
+                strLatencies = System.String.Format("Render: {0:F3} TimeWarp: {1:F3} Post-Present: {2:F3}\nRender Error: {3:F3} TimeWarp Error: {4:F3}",
                     latency.render,
                     latency.timeWarp,
                     latency.postPresent,
@@ -478,32 +423,6 @@ public class OVRDebugInfo : MonoBehaviour
             accum = 0.0f;
             frames = 0;
         }
-    }
-
-    /// <summary>
-    /// Checks to see if HMD and / or sensor is available, and displays a 
-    /// message if it is not.
-    /// </summary>
-    void CheckIfRiftPresent()
-    {
-		hmdPresent = OVRManager.instance.isVRPresent;
-
-        if (!hmdPresent)
-        {
-            riftPresentTimeout = 15.0f;
-			strRiftPresent = "VR DISABLED";
-            ShowRiftPresentGUI();
-        }
-    }
-
-    /// <summary>
-    /// Updates the speed and rotation scale multiplier.
-    /// </summary>
-    public void UpdateSpeedAndRotationScaleMultiplier(float moveScaleMultiplier, float rotationScaleMultiplier)
-    {       
-        strSpeedRotationMultipler = System.String.Format("Spd.X: {0:F2} Rot.X: {1:F2}",
-                                    moveScaleMultiplier,
-                                    rotationScaleMultiplier);
     }
     #endregion
 }

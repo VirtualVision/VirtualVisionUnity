@@ -59,14 +59,14 @@ public class HUDPluginImageScript : MonoBehaviour {
 		//http://forum.unity3d.com/threads/netmq-basic.298104/
 		//must compile myself
 		//https://github.com/zeromq/netmq/issues/98
-		/*context = NetMQContext.Create ();
+		context = NetMQContext.Create ();
 		server = context.CreatePublisherSocket ();
 		server.Bind("tcp://127.0.0.1:5556");
 		client = context.CreateSubscriberSocket ();
 		client.Connect("tcp://127.0.0.1:5556");
 		client.Subscribe ("coord");
 		Debug.Log (System.Environment.Version);
-		server.SendMore("coord").Send ("200 200");
+		/*server.SendMore("coord").Send ("200 200");
 		string top = client.ReceiveString ();
 		string message = client.ReceiveString ();
 		Debug.Log (message);
@@ -81,19 +81,16 @@ public class HUDPluginImageScript : MonoBehaviour {
 		AsyncIO.ForceDotNet.Force();
 		string top;
 		string message;
-		/*if (client.TryReceiveFrameString (out top)) {
+		if (client.TryReceiveFrameString (out top)) {
 			if(client.TryReceiveFrameString (out message)){
 				Debug.Log (message);
 				string[] coord = message.Split ();
 				transX = int.Parse (coord [0]);
 				transY = int.Parse (coord [1]);
 			}
-		}*/
+		}
 		if (Input.GetKeyDown(KeyCode.N)){
 			calCount++;
-		}
-		if (Input.GetKeyDown(KeyCode.M)){
-			calCount--;
 		}
 		if (Input.GetKeyDown(KeyCode.C)){
 			if(isVisible){
@@ -103,7 +100,7 @@ public class HUDPluginImageScript : MonoBehaviour {
 			else{
 				isVisible = true;
 				targetPrefab.SetActive(true);
-				//server.SendMore("coord").Send ("200 200");
+				server.SendMore("coord").Send ("1180 564");
 			}
 		}
 
@@ -114,17 +111,16 @@ public class HUDPluginImageScript : MonoBehaviour {
 			gameObject.GetComponent<Image> ().sprite = calImages [calCount];
 
 		}
-		tr = GameObject.FindGameObjectWithTag("ForwardDirection").transform;
-		//1760 *850
-		vec = (tr.forward) + (tr.right * (-1.76f + (transX*.002f))) + (tr.up * (.85f - (transY*.002f)));
-
+		tr = GameObject.FindGameObjectWithTag("RightEyeCamera").transform;
+		vec = (tr.forward) + (tr.right * ((transX-590) /1000)) + (tr.up * (((-transY)+282)/1000));
+		//vec = (tr.forward) + (tr.right * (transX)) + (tr.up * ((transY)));
 		Vector3 orig = GameObject.FindGameObjectWithTag("RightEyeCamera").transform.position;
 		RaycastHit hit;
 		Ray ray = new Ray (orig, vec);
 		//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		if (isVisible) {
 			if (Physics.Raycast (ray, out hit, 100.0f)) {
-				Debug.DrawLine (ray.origin, hit.point);
+				//Debug.DrawLine (ray.origin, hit.point);
 				targetPrefab.transform.position = hit.point;
 				targetPrefab.transform.rotation = Quaternion.FromToRotation (Vector3.up, hit.normal);
 				targetPrefab.SetActive (true);

@@ -1,21 +1,23 @@
 ﻿using UnityEngine;
+using UnityEngine.VR;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-	private float cameraSpeed = 1.5f;
-	public int rotationAngle = 45;
+	private float cameraSpeed = 3.5f;
+	public float rotationAngle = 45.0f;
 	private Transform tr;
 
 	// Use this for initialization
 	void Start () {
-		tr = Camera.main.transform;
+		tr = GameObject.FindGameObjectWithTag ("DummyCamera").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//Movement
 		//This goes straight through walls
+		Vector3 euler = tr.rotation.eulerAngles;
 		if (Input.GetKey (KeyCode.W)) {
 			tr.position += (tr.forward * cameraSpeed * Time.deltaTime);
 		}
@@ -30,10 +32,10 @@ public class CameraController : MonoBehaviour {
 		}
 		//Rotation
 		if (Input.GetKeyDown (KeyCode.Q)) {
-			transform.Rotate (0,-rotationAngle,0);
+			tr.Rotate(Vector3.up * -rotationAngle, Space.World);
 		}
 		if (Input.GetKeyDown (KeyCode.E)) {
-			transform.Rotate (0,rotationAngle,0);
+			tr.Rotate(Vector3.up * +rotationAngle, Space.World);
 		}
 	}
 }

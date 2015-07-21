@@ -22,6 +22,7 @@ limitations under the License.
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using VR = UnityEngine.VR;
 
 /// <summary>
 /// Dalculates distance to tracking volume and displays arrows or icons when close.
@@ -36,7 +37,7 @@ public class OVRTrackerBounds : MonoBehaviour
     [Tooltip("Distance from volume to start fading")]
     public float fadeDistance = 0.1f;
     [Tooltip("Maximum fade amount (from 0.0 to 1.0)")]
-    public float fadeMaximum = 0.8f;
+    public float fadeMaximum = 0.2f;
     public Color fadeColor = Color.black;
 
     public bool enableIcons = false;
@@ -49,6 +50,7 @@ public class OVRTrackerBounds : MonoBehaviour
     public float arrowDistance = 0.2f;
     public float animSpeed = 10.0f;
     public float animDistance = 0.2f;
+	public float waitTime = 10f;
 
     private Material fadeMaterial = null;
 
@@ -67,7 +69,7 @@ public class OVRTrackerBounds : MonoBehaviour
 		if (!Application.isPlaying)
 			return;
 
-        fadeMaterial = new Material(Shader.Find("Transparent/Diffuse"));
+		fadeMaterial = new Material(Shader.Find("Oculus/Unlit Transparent Color"));
     }
 
     void OnDestroy()
@@ -129,13 +131,16 @@ public class OVRTrackerBounds : MonoBehaviour
 
 	void Update ()
 	{
-		if (!Application.isPlaying || !OVRManager.tracker.isPresent)
+		if (!Application.isPlaying || !OVRManager.tracker.isPresent || Time.time < waitTime)
 		{
 			if (arrowObject && arrowObject.activeSelf)
 				arrowObject.SetActive(false);
 
 			if (iconImage != null)
+			{
 				iconImage.enabled = false;
+				iconImage.gameObject.SetActive(false);
+			}
 
 			return;
 		}
@@ -146,8 +151,14 @@ public class OVRTrackerBounds : MonoBehaviour
         Matrix4x4 trackerMat = Matrix4x4.TRS(trackerPose.position, trackerPose.orientation, Vector3.one);
 
         // Transform point into volume space
-		OVRPose headPose = OVRManager.display.GetHeadPose(0f);
+		OVRPose headPose;
+		headPose.position = VR.InputTracking.GetLocalPosition(VR.VRNode.Head);
+		headPose.orientation = VR.InputTracking.GetLocalRotation(VR.VRNode.Head);
+
 		Vector3 localPos = trackerMat.inverse.MultiplyPoint(headPose.position);
+
+		localPos[0] = -localPos[0];
+		localPos[2] = -localPos[2];
 
         int closestPlane;
         float dist = DistanceToPlanes(localPos, out closestPlane);
@@ -157,7 +168,8 @@ public class OVRTrackerBounds : MonoBehaviour
             // Display arrow icon if approaching edge of volume
             if (dist > -fadeDistance)
             {
-                iconImage.enabled = true;
+                iconImage.gameObject.SetActive(true);
+				iconImage.enabled = true;
                 iconImage.texture = iconTextures[closestPlane];
                 float alpha = SmoothStep(-fadeDistance, 0.0f, dist);
                 iconImage.color = new Color(1.0f, 1.0f, 1.0f, alpha);
@@ -165,7 +177,8 @@ public class OVRTrackerBounds : MonoBehaviour
             else
             {
                 iconImage.enabled = false;
-            }
+				iconImage.gameObject.SetActive(false);
+			}
         }
 
         if (arrowObject)
@@ -194,7 +207,7 @@ public class OVRTrackerBounds : MonoBehaviour
 
     void OnRenderObject()
 	{
-		if (!Application.isPlaying || !OVRManager.tracker.isPresent)
+		if (!Application.isPlaying || !OVRManager.tracker.isPresent || Time.time < waitTime)
 			return;
 
         // Full-screen fade

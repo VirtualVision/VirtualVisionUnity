@@ -22,6 +22,9 @@ limitations under the License.
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// An on-screen display that shows the current system audio volume.
+/// </summary>
 public class OVRVolumeControl : MonoBehaviour
 {
 	private const float 		showPopupTime = 3;
@@ -31,6 +34,8 @@ public class OVRVolumeControl : MonoBehaviour
 	private const int 			numVolumeImages = maxVolume + 1;
 	
 	private Transform			myTransform = null;
+	private double				lastVolumeChange = double.NegativeInfinity;
+	private float				prevVolumeLevel = -1;
 	
 	void Start()
 	{
@@ -45,13 +50,20 @@ public class OVRVolumeControl : MonoBehaviour
 	/// </summary>
 	public virtual void UpdatePosition(Transform cameraTransform)
 	{
-		// OVRDevice.GetTimeSinceLastVolumeChange() will return -1 if the volume listener hasn't initialized yet,
-		// which sometimes takes place after a frame has run in Unity.
-		double timeSinceLastVolumeChange = OVRManager.timeSinceLastVolumeChange;
-		if ((timeSinceLastVolumeChange != -1) && (timeSinceLastVolumeChange < showPopupTime))
+		if (prevVolumeLevel == -1)
+			prevVolumeLevel = OVRManager.volumeLevel;
+
+		if (prevVolumeLevel != OVRManager.volumeLevel)
+		{
+			prevVolumeLevel = OVRManager.volumeLevel;
+			lastVolumeChange = Time.time;
+		}
+
+		if (Time.time - lastVolumeChange < showPopupTime)
 		{
 			GetComponent<Renderer>().enabled = true;
-			GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0.0f, (float)(maxVolume - OVRManager.volumeLevel) / (float)numVolumeImages);
+			int volume = (int)(OVRManager.volumeLevel * 15.0f + 0.5f);
+			GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0.0f, (float)(maxVolume - volume) / (float)numVolumeImages);
 			if (myTransform != null && cameraTransform != null)
 			{
 				// place in front of camera

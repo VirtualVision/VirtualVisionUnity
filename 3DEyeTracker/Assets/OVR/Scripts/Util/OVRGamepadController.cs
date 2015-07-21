@@ -153,7 +153,10 @@ public class OVRGamepadController : MonoBehaviour
 	/// </summary>
     public static string[] ButtonNames = null;
 
+#if !UNITY_ANDROID || UNITY_EDITOR
     private static int lastGPCRefresh = 0;
+    private static bool isMapped = true;
+#endif
 
     static OVRGamepadController()
     {
@@ -257,7 +260,14 @@ public class OVRGamepadController : MonoBehaviour
 		return Input.GetAxis(AxisNames[(int)axis]);
 #else
         float xinputValue = OVR_GamepadController_GetAxis((int)axis);
-        float unityValue = Input.GetAxis(AxisNames[(int)axis]);
+
+        float unityValue = 0f;
+        if (isMapped)
+        {
+            try { unityValue = Input.GetAxis(AxisNames[(int)axis]); }
+            catch { isMapped = false; }
+        }
+
         return Mathf.Abs(xinputValue) > Mathf.Abs(unityValue) ? xinputValue : unityValue;
 #endif
 	}
@@ -289,7 +299,15 @@ public class OVRGamepadController : MonoBehaviour
         {
             GPC_Update();
         }
-		return OVR_GamepadController_GetButton((int)button) || Input.GetButton(ButtonNames[(int)button]);
+
+        bool unityValue = false;
+        if (isMapped)
+        {
+            try { unityValue = Input.GetButton(ButtonNames[(int)button]); }
+            catch { isMapped = false; }
+        }
+
+		return OVR_GamepadController_GetButton((int)button) || unityValue;
 #endif
 	}
 
@@ -377,17 +395,17 @@ public class OVRGamepadController : MonoBehaviour
 		GPC_Available = false;
 	}
 
-	public const string LibOVR = "OculusPlugin";
+	public const string DllName = "OVRGamepad";
 	
-	[DllImport(LibOVR, CallingConvention = CallingConvention.Cdecl)]
+	[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
 	public static extern bool OVR_GamepadController_Initialize();
-	[DllImport(LibOVR, CallingConvention = CallingConvention.Cdecl)]
+	[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
 	public static extern bool OVR_GamepadController_Destroy();
-	[DllImport(LibOVR, CallingConvention = CallingConvention.Cdecl)]
+	[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
 	public static extern bool OVR_GamepadController_Update();
-	[DllImport(LibOVR, CallingConvention = CallingConvention.Cdecl)]
+	[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
 	public static extern float OVR_GamepadController_GetAxis(int axis);
-	[DllImport(LibOVR, CallingConvention = CallingConvention.Cdecl)]
+	[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
 	public static extern bool OVR_GamepadController_GetButton(int button);
 #endif
     void LateUpdate()

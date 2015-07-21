@@ -20,8 +20,10 @@ limitations under the License.
 ************************************************************************************/
 
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Runtime.InteropServices;
+using VR = UnityEngine.VR;
 
 /// <summary>
 /// Add OVROverlay script to an object with a Quad mesh filter to have the quad
@@ -43,20 +45,11 @@ public class OVROverlay : MonoBehaviour
 		OverlayShowLod	// Blends on top and colorizes texture level of detail
 	};
 
-#pragma warning disable 414		// The private field 'x' is assigned but its value is never used
-	Matrix4x4 		toOculusMatrix = Matrix4x4.Scale(new Vector3(0.5f, -0.5f, -0.5f));
 	OverlayType		currentOverlayType = OverlayType.Overlay;
-	int 			texId = 0;
-#pragma warning restore 414		// The private field 'x' is assigned but its value is never used
-
-#if UNITY_ANDROID && !UNITY_EDITOR
-	[DllImport("OculusPlugin")]
-	private static extern void OVR_TW_SetOverlayPlane (int texId, int eye, int program,
-	                                          float m0, float m1, float m2, float m3,
-	                                          float m4, float m5, float m6, float m7,
-	                                          float m8, float m9, float m10, float m11,
-	                                          float m12, float m13, float m14, float m15);
+#if !UNITY_ANDROID || UNITY_EDITOR
+    Texture         texture;
 #endif
+	IntPtr 			texId = IntPtr.Zero;
 
 	void Awake()
 	{
@@ -65,11 +58,22 @@ public class OVROverlay : MonoBehaviour
 		// Getting the NativeTextureID/PTR synchronizes with the multithreaded renderer, which
 		// causes a problem on the first frame if this gets called after the OVRDisplay initialization,
 		// so do it in Awake() instead of Start().
-		texId = this.GetComponent<Renderer>().material.mainTexture.GetNativeTextureID();
-	}
+		texId = this.GetComponent<Renderer>().material.mainTexture.GetNativeTexturePtr();
+#if !UNITY_ANDROID || UNITY_EDITOR
+        texture = this.GetComponent<Renderer>().material.mainTexture;
+#endif
+    }
 
 	void Update()
-	{
+    {
+#if !UNITY_ANDROID || UNITY_EDITOR
+        if (this.GetComponent<Renderer>().material.mainTexture != texture)
+        {
+            texId = this.GetComponent<Renderer>().material.mainTexture.GetNativeTexturePtr();
+            texture = this.GetComponent<Renderer>().material.mainTexture;
+        }
+#endif
+
 		if (Input.GetKey (KeyCode.Joystick1Button0))
 		{
 			currentOverlayType = OverlayType.None;
@@ -96,18 +100,32 @@ public class OVROverlay : MonoBehaviour
 			return;
 		}
 
-		GetComponent<Renderer>().enabled = false;		// render with the overlay plane instead of the normal renderer
+		bool overlay = (currentOverlayType == OverlayType.Overlay);
 
-#if UNITY_ANDROID && !UNITY_EDITOR
-		int eyeNum = (Camera.current.depth == (int)RenderEventType.RightEyeEndFrame) ? 1 : 0;
-		Matrix4x4 mv = Camera.current.worldToCameraMatrix * this.transform.localToWorldMatrix * toOculusMatrix;
+		Transform camPose = Camera.current.transform;
+		Matrix4x4 modelToCamera = camPose.worldToLocalMatrix * transform.localToWorldMatrix;
 
-		OVR_TW_SetOverlayPlane (texId, eyeNum, (int)currentOverlayType,
-	                        mv [0, 0], mv [0, 1], mv [0, 2], mv [0, 3],
-	                        mv [1, 0], mv [1, 1], mv [1, 2], mv [1, 3],
-	                        mv [2, 0], mv [2, 1], mv [2, 2], mv [2, 3],
-	       					mv [3, 0], mv [3, 1], mv [3, 2], mv [3, 3]);
-#endif
+		Vector3 headPos = VR.InputTracking.GetLocalPosition(VR.VRNode.Head);
+		Quaternion headOrt = VR.InputTracking.GetLocalRotation(VR.VRNode.Head);
+		Matrix4x4 cameraToStart = Matrix4x4.TRS(headPos, headOrt, Vector3.one);
+
+		Matrix4x4 modelToStart = cameraToStart * modelToCamera;
+
+		OVRPose pose;
+		pose.position = modelToStart.GetColumn(3);
+		pose.orientation = Quaternion.LookRotation(modelToStart.GetColumn(2), modelToStart.GetColumn(1));
+
+        // Convert left-handed to right-handed.
+        pose.position.z = -pose.position.z;
+        pose.orientation.w = -pose.orientation.w;
+
+		Vector3 scale = transform.lossyScale;
+        for (int i = 0; i < 3; ++i)
+            scale[i] /= Camera.current.transform.lossyScale[i];
+
+		OVRPlugin.Bool result = OVRPlugin.SetOverlayQuad(overlay.ToBool(), texId, IntPtr.Zero, pose.ToPosef(), scale.ToVector3f());
+
+		GetComponent<Renderer>().enabled = (result == OVRPlugin.Bool.False);		// render with the overlay plane instead of the normal renderer
 	}
 	
 }

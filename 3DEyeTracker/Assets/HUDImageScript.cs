@@ -89,7 +89,7 @@ public class HUDImageScript : MonoBehaviour {
 				transY = int.Parse (coord [1]);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Space)){
+		if (Input.GetKeyDown(KeyCode.N)){
 			calCount++;
 		}
 		if (Input.GetKeyDown(KeyCode.C)){
@@ -100,7 +100,7 @@ public class HUDImageScript : MonoBehaviour {
 			else{
 				isVisible = true;
 				targetPrefab.SetActive(true);
-				server.SendMore("coord").Send ("200 200");
+				server.SendMore("coord").Send ("1180 564");
 			}
 		}
 
@@ -113,14 +113,14 @@ public class HUDImageScript : MonoBehaviour {
 		}
 		tr = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		vec = (tr.forward) + (tr.right * ((transX-590) /1000)) + (tr.up * (((-transY)+282)/1000));
-
-		Vector3 orig = Camera.main.transform.position;
+		//vec = (tr.forward) + (tr.right * (transX)) + (tr.up * ((transY)));
+		Vector3 orig = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
 		RaycastHit hit;
 		Ray ray = new Ray (orig, vec);
 		//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		if (isVisible) {
 			if (Physics.Raycast (ray, out hit, 100.0f)) {
-				Debug.DrawLine (ray.origin, hit.point);
+				//Debug.DrawLine (ray.origin, hit.point);
 				targetPrefab.transform.position = hit.point;
 				targetPrefab.transform.rotation = Quaternion.FromToRotation (Vector3.up, hit.normal);
 				targetPrefab.SetActive (true);
