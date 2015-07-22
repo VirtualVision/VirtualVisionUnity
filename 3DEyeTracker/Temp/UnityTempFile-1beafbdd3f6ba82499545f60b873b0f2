@@ -70,6 +70,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
 Assets/CameraController.cs
+Assets/CameraTranslator.cs
 Assets/CurvedUI/Scripts/CanvasMapping.cs
 Assets/CurvedUI/Scripts/CylinderMapping.cs
 Assets/CurvedUI/Scripts/MappedGraphicMaterialModifier.cs
@@ -78,7 +79,6 @@ Assets/CurvedUI/Scripts/SideToSide.cs
 Assets/CurvedUI/Scripts/SinWaveMapping.cs
 Assets/CurvedUI/Scripts/Spin.cs
 Assets/CurvedUI/Scripts/TessellationVertexEffect.cs
-Assets/FreeLook.cs
 Assets/HUDImageScript.cs
 Assets/HUDPluginImageScript.cs
 Assets/OVR/Moonlight/Scripts/OVRDebugHeadController.cs

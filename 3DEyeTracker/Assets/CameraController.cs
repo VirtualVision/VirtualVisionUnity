@@ -3,33 +3,29 @@ using UnityEngine.VR;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
-
+	
 	private float cameraSpeed = 3.5f;
 	public float rotationAngle = 45.0f;
 	private Transform tr;
-
+	
 	// Use this for initialization
 	void Start () {
-		tr = GameObject.FindGameObjectWithTag ("DummyCamera").transform;
+		tr = GameObject.FindGameObjectWithTag ("MainCamera").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//Movement
-		//This goes straight through walls
-		Vector3 euler = tr.rotation.eulerAngles;
-		if (Input.GetKey (KeyCode.W)) {
-			tr.position += (tr.forward * cameraSpeed * Time.deltaTime);
-		}
-		if (Input.GetKey (KeyCode.A)) {
-			tr.position += (-tr.right * cameraSpeed * Time.deltaTime);
-		}
-		if (Input.GetKey (KeyCode.S)) {
-			tr.position += (-tr.forward * cameraSpeed * Time.deltaTime);
-		}
-		if (Input.GetKey (KeyCode.D)) {
-			tr.position += (tr.right * cameraSpeed * Time.deltaTime);
-		}
+		CharacterController controller = GetComponent<CharacterController>();
+		Vector3 moveDirection;
+		Vector3 xDir = (tr.forward * Input.GetAxis("Vertical"));
+		xDir.y = 0f;
+		Vector3 zDir = (tr.right * Input.GetAxis ("Horizontal"));
+		zDir.y = 0f;
+		xDir.Normalize ();
+		zDir.Normalize ();
+		moveDirection = (new Vector3 (xDir.x + zDir.x, 0, zDir.z + xDir.z)).normalized;
+		moveDirection *= cameraSpeed * Time.deltaTime;
 		//Rotation
 		if (Input.GetKeyDown (KeyCode.Q)) {
 			tr.Rotate(Vector3.up * -rotationAngle, Space.World);
@@ -37,5 +33,6 @@ public class CameraController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.E)) {
 			tr.Rotate(Vector3.up * +rotationAngle, Space.World);
 		}
+		controller.Move (moveDirection);
 	}
 }

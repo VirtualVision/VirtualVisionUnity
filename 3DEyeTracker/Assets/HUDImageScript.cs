@@ -22,7 +22,7 @@ public class HUDImageScript : MonoBehaviour {
 
 
 	private NetMQContext context;
-	private NetMQSocket server; 
+	private NetMQSocket calibrator; 
 	private NetMQSocket client; 
 
 	private GameObject targetPrefab;
@@ -60,11 +60,11 @@ public class HUDImageScript : MonoBehaviour {
 		//must compile myself
 		//https://github.com/zeromq/netmq/issues/98
 		context = NetMQContext.Create ();
-		server = context.CreatePublisherSocket ();
-		server.Bind("tcp://127.0.0.1:5556");
+		calibrator = context.CreatePublisherSocket ();
+		calibrator.Bind("tcp://127.0.0.1:5567");
 		client = context.CreateSubscriberSocket ();
-		client.Connect("tcp://127.0.0.1:5556");
-		client.Subscribe ("coord");
+		client.Connect("tcp://127.0.0.1:5568");
+		client.Subscribe ("ScreenPoints");
 		Debug.Log (System.Environment.Version);
 		/*server.SendMore("coord").Send ("200 200");
 		string top = client.ReceiveString ();
@@ -89,8 +89,9 @@ public class HUDImageScript : MonoBehaviour {
 				transY = int.Parse (coord [1]);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.N)){
+		if (Input.GetKeyDown(KeyCode.Space)){
 			calCount++;
+
 		}
 		if (Input.GetKeyDown(KeyCode.C)){
 			if(isVisible){
@@ -100,7 +101,7 @@ public class HUDImageScript : MonoBehaviour {
 			else{
 				isVisible = true;
 				targetPrefab.SetActive(true);
-				server.SendMore("coord").Send ("1180 564");
+				//calibrator.SendMore("GazeData").Send ("1180 564");
 			}
 		}
 
@@ -109,7 +110,9 @@ public class HUDImageScript : MonoBehaviour {
 			curCount = calCount;
 
 			gameObject.GetComponent<Image> ().sprite = calImages [calCount];
-
+			if (calCount != 1) {
+				calibrator.Send ("Calibrate");
+			}
 		}
 		tr = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		vec = (tr.forward) + (tr.right * ((transX-590) /1000)) + (tr.up * (((-transY)+282)/1000));
