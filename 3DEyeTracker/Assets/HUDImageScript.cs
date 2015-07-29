@@ -19,7 +19,7 @@ public class HUDImageScript : MonoBehaviour {
 	public float transX;
 	public float transY;
 	public bool isVisible;
-
+	public bool calibrated;
 
 	private NetMQContext context;
 	private NetMQSocket calibrator; 
@@ -28,6 +28,7 @@ public class HUDImageScript : MonoBehaviour {
 	private GameObject targetPrefab;
 
 	// initialized sprites
+	//todo write script to dynamically change text after certain time, 
 	void Start () {
 		AsyncIO.ForceDotNet.Force();
 		calImages = new Sprite[10];
@@ -52,6 +53,7 @@ public class HUDImageScript : MonoBehaviour {
 		targetPrefab.SetActive (false);
 		targetPrefab.layer = 2;//ignore raycast layer
 		isVisible = false;
+		calibrated = false;
 
 		AsyncIO.ForceDotNet.Force();
 		//setup sockets
@@ -87,21 +89,37 @@ public class HUDImageScript : MonoBehaviour {
 				string[] coord = message.Split ();
 				transX = int.Parse (coord [0]);
 				transY = int.Parse (coord [1]);
+				calibrated = true;
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Space)){
+		if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown (KeyCode.JoystickButton0)){
 			calCount++;
-
+			if (calCount != 1) {
+				calibrator.Send ("Calibrate");
+			}
+			else{
+				calibrated = false;
+				isVisible = false;
+				targetPrefab.SetActive(false);
+			}
+			if(calCount == 10){
+				calibrated = true;
+				isVisible = true;
+				targetPrefab.SetActive(true);
+			}
 		}
-		if (Input.GetKeyDown(KeyCode.C)){
+		if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown (KeyCode.JoystickButton1)){
 			if(isVisible){
 				isVisible = false;
 				targetPrefab.SetActive(false);
 			}
-			else{
+			else if (calibrated){
 				isVisible = true;
 				targetPrefab.SetActive(true);
 				//calibrator.SendMore("GazeData").Send ("1180 564");
+			}
+			else{
+			//change gui 
 			}
 		}
 
@@ -110,9 +128,6 @@ public class HUDImageScript : MonoBehaviour {
 			curCount = calCount;
 
 			gameObject.GetComponent<Image> ().sprite = calImages [calCount];
-			if (calCount != 1) {
-				calibrator.Send ("Calibrate");
-			}
 		}
 		tr = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		vec = (tr.forward) + (tr.right * ((transX-590) /1000)) + (tr.up * (((-transY)+282)/1000));
