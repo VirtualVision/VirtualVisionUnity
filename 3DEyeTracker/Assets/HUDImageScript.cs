@@ -20,12 +20,14 @@ public class HUDImageScript : MonoBehaviour {
 	public float transY;
 	public bool isVisible;
 	public bool calibrated;
+	public float textTime;
 
 	private NetMQContext context;
 	private NetMQSocket calibrator; 
 	private NetMQSocket client; 
 
 	private GameObject targetPrefab;
+	private Text uiText;
 
 	// initialized sprites
 	//todo write script to dynamically change text after certain time, 
@@ -49,7 +51,9 @@ public class HUDImageScript : MonoBehaviour {
 		//max coords 1180*564
 		transX = 0;
 		transY = 0;
+		textTime = -2.0f;
 		targetPrefab = GameObject.FindGameObjectWithTag ("RaycastTarget");
+		uiText = GameObject.FindGameObjectWithTag ("UIText").GetComponent<Text> ();;
 		targetPrefab.SetActive (false);
 		targetPrefab.layer = 2;//ignore raycast layer
 		isVisible = false;
@@ -94,6 +98,7 @@ public class HUDImageScript : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown (KeyCode.JoystickButton0)){
 			calCount++;
+			textTime = 5.0f;
 			if (calCount != 1) {
 				calibrator.Send ("Calibrate");
 			}
@@ -106,6 +111,8 @@ public class HUDImageScript : MonoBehaviour {
 				calibrated = true;
 				isVisible = true;
 				targetPrefab.SetActive(true);
+				uiText.text = "Press A to recalibrate" + Environment.NewLine + "Press B to toggle eye tracking";
+				textTime = 0.0f;
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown (KeyCode.JoystickButton1)){
@@ -118,8 +125,10 @@ public class HUDImageScript : MonoBehaviour {
 				targetPrefab.SetActive(true);
 				//calibrator.SendMore("GazeData").Send ("1180 564");
 			}
-			else{
+			else if (calCount == 0){
 			//change gui 
+				uiText.text = "Press A to begin calibration";
+				textTime = 0.0f;
 			}
 		}
 
@@ -146,6 +155,11 @@ public class HUDImageScript : MonoBehaviour {
 				targetPrefab.SetActive (false);
 			}
 		}
-
+		textTime += Time.deltaTime;
+		if(textTime >= 2.0) {
+			uiText.text = "";
+		}
 	}
+
+
 }

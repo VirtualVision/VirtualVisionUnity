@@ -1,0 +1,58 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 430 (ID=0xde1)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\AsyncIO.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\AsyncIO.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll into Unity Child Domain
+- Completed reload, in  0.091 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.dll (this message is harmless)
+[CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT64_0_6.dll
+
+ 
+(Filename:  Line: 46)
+
+ovrHmd_Create failed to complete within the timeout period.
+ 
+(Filename:  Line: 48)
+
+[Compositor] ERROR: Compositor failed to initialize.
+ 
+(Filename:  Line: 48)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename:  Line: 343)
+
+3.0.40818.0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: a0c -> priority: 1 
+  Thread -> id: 67c -> priority: 1 
+Joystick connected ("Controller (XBOX 360 For Windows)").
+ 
+(Filename:  Line: 1353)
+
