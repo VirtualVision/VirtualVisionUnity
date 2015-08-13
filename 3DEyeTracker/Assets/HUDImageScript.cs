@@ -12,15 +12,16 @@ public class HUDImageScript : MonoBehaviour {
 	public int calCount;
 	public int curCount;
 	public Sprite[] calImages;
+	public Sprite[] secImages;
 
 	public Transform tr;
 	public Vector3 vec;
 	public Ray ray;
 	public float transX;
 	public float transY;
-	public bool isVisible;
 	public bool calibrated;
 	public float textTime;
+	public int trackingMode;
 
 	private NetMQContext context;
 	private NetMQSocket calibrator; 
@@ -30,7 +31,7 @@ public class HUDImageScript : MonoBehaviour {
 	private Text uiText;
 
 	// initialized sprites
-	//todo write script to dynamically change text after certain time, 
+	//
 	void Start () {
 		AsyncIO.ForceDotNet.Force();
 		calImages = new Sprite[10];
@@ -45,6 +46,18 @@ public class HUDImageScript : MonoBehaviour {
 		calImages[8] = Resources.Load<Sprite>("targetBM");
 		calImages[9] = Resources.Load<Sprite>("targetBR");
 
+		secImages = new Sprite[9];
+		secImages [0] = Resources.Load<Sprite> ("sectionTL");
+		secImages [1] = Resources.Load<Sprite> ("sectionTM");
+		secImages [2] = Resources.Load<Sprite> ("sectionTR");
+		secImages [3] = Resources.Load<Sprite> ("sectionML");
+		secImages [4] = Resources.Load<Sprite> ("sectionMM");
+		secImages [5] = Resources.Load<Sprite> ("sectionMR");
+		secImages [6] = Resources.Load<Sprite> ("sectionBL");
+		secImages [7] = Resources.Load<Sprite> ("sectionBM");
+		secImages [8] = Resources.Load<Sprite> ("sectionBR");
+
+
 		calCount = 0;
 		curCount = 0;
 		gameObject.GetComponent<Image> ().sprite = calImages [calCount];
@@ -56,8 +69,8 @@ public class HUDImageScript : MonoBehaviour {
 		uiText = GameObject.FindGameObjectWithTag ("UIText").GetComponent<Text> ();;
 		targetPrefab.SetActive (false);
 		targetPrefab.layer = 2;//ignore raycast layer
-		isVisible = false;
 		calibrated = false;
+		trackingMode = 0;
 
 		AsyncIO.ForceDotNet.Force();
 		//setup sockets
@@ -104,26 +117,27 @@ public class HUDImageScript : MonoBehaviour {
 			}
 			else{
 				calibrated = false;
-				isVisible = false;
+				trackingMode = 0;
 				targetPrefab.SetActive(false);
 			}
 			if(calCount == 10){
 				calibrated = true;
-				isVisible = true;
 				targetPrefab.SetActive(true);
-				uiText.text = "Press A to recalibrate" + Environment.NewLine + "Press B to toggle eye tracking";
+				uiText.text = "Press A to recalibrate" + Environment.NewLine + "Press B to toggle eye tracking modes";
 				textTime = 0.0f;
+				trackingMode = 1;
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown (KeyCode.JoystickButton1)){
-			if(isVisible){
-				isVisible = false;
-				targetPrefab.SetActive(false);
-			}
-			else if (calibrated){
-				isVisible = true;
-				targetPrefab.SetActive(true);
-				//calibrator.SendMore("GazeData").Send ("1180 564");
+			if (calibrated){
+				if(trackingMode == 0){
+					targetPrefab.SetActive(true);
+
+				}
+				if(trackingMode > 0){
+					targetPrefab.SetActive(false);
+				}
+				trackingMode = (trackingMode + 1) % 3;
 			}
 			else if (calCount == 0){
 			//change gui 
@@ -138,14 +152,17 @@ public class HUDImageScript : MonoBehaviour {
 
 			gameObject.GetComponent<Image> ().sprite = calImages [calCount];
 		}
-		tr = GameObject.FindGameObjectWithTag("MainCamera").transform;
-		vec = (tr.forward) + (tr.right * ((transX-590) /1000)) + (tr.up * (((-transY)+282)/1000));
-		//vec = (tr.forward) + (tr.right * (transX)) + (tr.up * ((transY)));
-		Vector3 orig = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
-		RaycastHit hit;
-		Ray ray = new Ray (orig, vec);
-		//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		if (isVisible) {
+		if (trackingMode == 0 && calibrated) {
+			gameObject.GetComponent<Image> ().sprite = calImages [0];
+		}
+		if (trackingMode == 1) {
+			tr = GameObject.FindGameObjectWithTag ("MainCamera").transform;
+			vec = (tr.forward) + (tr.right * ((transX - 590) / 1000)) + (tr.up * (((-transY) + 282) / 1000));
+			//vec = (tr.forward) + (tr.right * (transX)) + (tr.up * ((transY)));
+			Vector3 orig = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
+			RaycastHit hit;
+			Ray ray = new Ray (orig, vec);
+			//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast (ray, out hit, 100.0f)) {
 				//Debug.DrawLine (ray.origin, hit.point);
 				targetPrefab.transform.position = hit.point;
@@ -154,10 +171,26 @@ public class HUDImageScript : MonoBehaviour {
 			} else {
 				targetPrefab.SetActive (false);
 			}
+		} else if (trackingMode == 2) {
+			int sectionIndex = 0;
+			if(transX > 368){
+				sectionIndex++;
+				if(transX > 810){
+					sectionIndex++;
+				}
+			}
+			if (transY > 163){
+				sectionIndex +=3;
+				if(transY > 400){
+					sectionIndex+=3;
+				}
+			}
+			gameObject.GetComponent<Image> ().sprite = secImages [sectionIndex];
 		}
-		textTime += Time.deltaTime;
-		if(textTime >= 2.0) {
+		if (textTime >= 2.0) {
 			uiText.text = "";
+		} else {
+			textTime += Time.deltaTime;
 		}
 	}
 

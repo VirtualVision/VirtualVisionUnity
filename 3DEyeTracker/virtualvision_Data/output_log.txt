@@ -3,7 +3,7 @@ Initialize engine version: 5.1.1f1 (2046fc06d4d8)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 430 (ID=0xde1)
+    Renderer: NVIDIA GeForce GTX 460 (ID=0xe22)
     Vendor:   NVIDIA
     VRAM:     979 MB
 Begin MonoManager ReloadAssembly
@@ -21,38 +21,6471 @@ Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed
 Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\AsyncIO.dll into Unity Child Domain
 Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll (this message is harmless)
 Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll into Unity Child Domain
-- Completed reload, in  0.091 seconds
+- Completed reload, in  0.240 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+desktop: 1920x1080 60Hz; virtual: 3000x1920 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.dll (this message is harmless)
-[CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT64_0_6.dll
+[CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_6.dll
 
  
 (Filename:  Line: 46)
 
-ovrHmd_Create failed to complete within the timeout period.
- 
-(Filename:  Line: 48)
+[TrackingStateReader] Prediction interval too high: 0.100000 s, clamping at 0.100000 s
 
-[Compositor] ERROR: Compositor failed to initialize.
  
-(Filename:  Line: 48)
-
-Bad config or LibOVR not found. VR disabled.
- 
-(Filename:  Line: 343)
+(Filename:  Line: 46)
 
 3.0.40818.0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: a0c -> priority: 1 
-  Thread -> id: 67c -> priority: 1 
-Joystick connected ("Controller (XBOX 360 For Windows)").
+  Thread -> id: 1be8 -> priority: 1 
+  Thread -> id: 1ac8 -> priority: 1 
+OVR Error:
+  OVRTime: 177430.457685
+  Time: 2015-08-10 16:55:26 [960:228:200]
+  Code: -1003 -- ovrError_Timeout
+  Description: Semaphore WaitForSingleObject
+
  
-(Filename:  Line: 1353)
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.158416
+  Time: 2015-08-10 16:55:29 [660:382:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.185277
+  Time: 2015-08-10 16:55:29 [687:384:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.189931
+  Time: 2015-08-10 16:55:29 [692:384:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.213436
+  Time: 2015-08-10 16:55:29 [715:385:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.217341
+  Time: 2015-08-10 16:55:29 [719:386:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.221472
+  Time: 2015-08-10 16:55:29 [723:386:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.226447
+  Time: 2015-08-10 16:55:29 [728:386:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.230207
+  Time: 2015-08-10 16:55:29 [732:386:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.235438
+  Time: 2015-08-10 16:55:29 [737:387:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.240390
+  Time: 2015-08-10 16:55:29 [742:387:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.245874
+  Time: 2015-08-10 16:55:29 [748:387:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.250142
+  Time: 2015-08-10 16:55:29 [752:387:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.254998
+  Time: 2015-08-10 16:55:29 [757:388:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.258432
+  Time: 2015-08-10 16:55:29 [760:388:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.261664
+  Time: 2015-08-10 16:55:29 [764:388:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.264669
+  Time: 2015-08-10 16:55:29 [767:388:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.267742
+  Time: 2015-08-10 16:55:29 [770:389:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.271544
+  Time: 2015-08-10 16:55:29 [773:389:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.274695
+  Time: 2015-08-10 16:55:29 [777:389:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.278453
+  Time: 2015-08-10 16:55:29 [780:389:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.281784
+  Time: 2015-08-10 16:55:29 [784:389:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.285219
+  Time: 2015-08-10 16:55:29 [787:389:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.288351
+  Time: 2015-08-10 16:55:29 [790:390:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.291527
+  Time: 2015-08-10 16:55:29 [793:390:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.294744
+  Time: 2015-08-10 16:55:29 [797:390:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.298465
+  Time: 2015-08-10 16:55:29 [800:390:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.301735
+  Time: 2015-08-10 16:55:29 [804:390:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.305114
+  Time: 2015-08-10 16:55:29 [807:391:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.308634
+  Time: 2015-08-10 16:55:29 [810:391:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.312054
+  Time: 2015-08-10 16:55:29 [814:391:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.315706
+  Time: 2015-08-10 16:55:29 [818:391:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.319355
+  Time: 2015-08-10 16:55:29 [821:391:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.322623
+  Time: 2015-08-10 16:55:29 [824:392:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.326279
+  Time: 2015-08-10 16:55:29 [828:392:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.330695
+  Time: 2015-08-10 16:55:29 [833:392:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.334240
+  Time: 2015-08-10 16:55:29 [836:392:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.337637
+  Time: 2015-08-10 16:55:29 [839:392:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.341170
+  Time: 2015-08-10 16:55:29 [843:393:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.344585
+  Time: 2015-08-10 16:55:29 [846:393:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.348728
+  Time: 2015-08-10 16:55:29 [851:393:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.352520
+  Time: 2015-08-10 16:55:29 [854:393:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.356110
+  Time: 2015-08-10 16:55:29 [858:394:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.381108
+  Time: 2015-08-10 16:55:29 [883:395:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.384345
+  Time: 2015-08-10 16:55:29 [886:395:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.387464
+  Time: 2015-08-10 16:55:29 [889:395:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.390420
+  Time: 2015-08-10 16:55:29 [892:395:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.393471
+  Time: 2015-08-10 16:55:29 [895:396:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.396408
+  Time: 2015-08-10 16:55:29 [898:396:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.399633
+  Time: 2015-08-10 16:55:29 [901:396:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.402772
+  Time: 2015-08-10 16:55:29 [905:396:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.405806
+  Time: 2015-08-10 16:55:29 [908:396:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.408882
+  Time: 2015-08-10 16:55:29 [911:397:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.411997
+  Time: 2015-08-10 16:55:29 [914:397:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.415098
+  Time: 2015-08-10 16:55:29 [917:397:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.418346
+  Time: 2015-08-10 16:55:29 [920:397:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.421578
+  Time: 2015-08-10 16:55:29 [923:397:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.424753
+  Time: 2015-08-10 16:55:29 [927:398:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.428077
+  Time: 2015-08-10 16:55:29 [930:398:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.431243
+  Time: 2015-08-10 16:55:29 [933:398:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.434377
+  Time: 2015-08-10 16:55:29 [936:398:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.437422
+  Time: 2015-08-10 16:55:29 [939:398:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.440546
+  Time: 2015-08-10 16:55:29 [942:398:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.443668
+  Time: 2015-08-10 16:55:29 [946:399:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.446627
+  Time: 2015-08-10 16:55:29 [948:399:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.449580
+  Time: 2015-08-10 16:55:29 [951:399:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.452681
+  Time: 2015-08-10 16:55:29 [955:399:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.455741
+  Time: 2015-08-10 16:55:29 [958:399:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.459090
+  Time: 2015-08-10 16:55:29 [961:399:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.462217
+  Time: 2015-08-10 16:55:29 [964:400:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.465315
+  Time: 2015-08-10 16:55:29 [967:400:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.468312
+  Time: 2015-08-10 16:55:29 [970:400:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.471305
+  Time: 2015-08-10 16:55:29 [973:400:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.474395
+  Time: 2015-08-10 16:55:29 [976:400:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.477561
+  Time: 2015-08-10 16:55:29 [979:400:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.481083
+  Time: 2015-08-10 16:55:29 [983:401:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.484705
+  Time: 2015-08-10 16:55:29 [987:401:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.487730
+  Time: 2015-08-10 16:55:29 [990:401:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.490981
+  Time: 2015-08-10 16:55:29 [993:401:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.494236
+  Time: 2015-08-10 16:55:29 [996:401:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.497549
+  Time: 2015-08-10 16:55:29 [999:402:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.500921
+  Time: 2015-08-10 16:55:30 [3:402:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.504112
+  Time: 2015-08-10 16:55:30 [6:402:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.507311
+  Time: 2015-08-10 16:55:30 [9:402:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.510283
+  Time: 2015-08-10 16:55:30 [12:402:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.513400
+  Time: 2015-08-10 16:55:30 [15:403:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.516747
+  Time: 2015-08-10 16:55:30 [19:403:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.519968
+  Time: 2015-08-10 16:55:30 [22:403:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.522882
+  Time: 2015-08-10 16:55:30 [25:403:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.525986
+  Time: 2015-08-10 16:55:30 [28:403:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.529129
+  Time: 2015-08-10 16:55:30 [31:403:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.532313
+  Time: 2015-08-10 16:55:30 [34:404:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.535393
+  Time: 2015-08-10 16:55:30 [37:404:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.538573
+  Time: 2015-08-10 16:55:30 [40:404:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.541600
+  Time: 2015-08-10 16:55:30 [43:404:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.544687
+  Time: 2015-08-10 16:55:30 [47:404:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.547713
+  Time: 2015-08-10 16:55:30 [50:405:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.550733
+  Time: 2015-08-10 16:55:30 [53:405:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.553730
+  Time: 2015-08-10 16:55:30 [56:405:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.556748
+  Time: 2015-08-10 16:55:30 [59:405:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.560073
+  Time: 2015-08-10 16:55:30 [62:405:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.563155
+  Time: 2015-08-10 16:55:30 [65:405:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.566305
+  Time: 2015-08-10 16:55:30 [68:406:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.569684
+  Time: 2015-08-10 16:55:30 [72:406:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.572874
+  Time: 2015-08-10 16:55:30 [75:406:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.575975
+  Time: 2015-08-10 16:55:30 [78:406:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.579222
+  Time: 2015-08-10 16:55:30 [81:406:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.582810
+  Time: 2015-08-10 16:55:30 [85:407:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.586090
+  Time: 2015-08-10 16:55:30 [88:407:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.589241
+  Time: 2015-08-10 16:55:30 [91:407:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.592242
+  Time: 2015-08-10 16:55:30 [94:407:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.595457
+  Time: 2015-08-10 16:55:30 [97:407:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.598810
+  Time: 2015-08-10 16:55:30 [101:407:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.602077
+  Time: 2015-08-10 16:55:30 [104:408:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.605328
+  Time: 2015-08-10 16:55:30 [107:408:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.608472
+  Time: 2015-08-10 16:55:30 [110:408:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.611693
+  Time: 2015-08-10 16:55:30 [114:408:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.614828
+  Time: 2015-08-10 16:55:30 [117:408:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.618030
+  Time: 2015-08-10 16:55:30 [120:409:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.621284
+  Time: 2015-08-10 16:55:30 [123:409:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.624491
+  Time: 2015-08-10 16:55:30 [126:409:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.627709
+  Time: 2015-08-10 16:55:30 [130:409:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.631055
+  Time: 2015-08-10 16:55:30 [133:409:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.634148
+  Time: 2015-08-10 16:55:30 [136:409:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.637359
+  Time: 2015-08-10 16:55:30 [139:410:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.640609
+  Time: 2015-08-10 16:55:30 [142:410:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.643723
+  Time: 2015-08-10 16:55:30 [146:410:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.646998
+  Time: 2015-08-10 16:55:30 [149:410:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.650226
+  Time: 2015-08-10 16:55:30 [152:410:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.653457
+  Time: 2015-08-10 16:55:30 [155:411:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.656742
+  Time: 2015-08-10 16:55:30 [159:411:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.660121
+  Time: 2015-08-10 16:55:30 [162:411:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.663182
+  Time: 2015-08-10 16:55:30 [165:411:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.666225
+  Time: 2015-08-10 16:55:30 [168:411:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.669497
+  Time: 2015-08-10 16:55:30 [171:411:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.672621
+  Time: 2015-08-10 16:55:30 [174:412:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.675970
+  Time: 2015-08-10 16:55:30 [178:412:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.679281
+  Time: 2015-08-10 16:55:30 [181:412:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.682372
+  Time: 2015-08-10 16:55:30 [184:412:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.685679
+  Time: 2015-08-10 16:55:30 [188:412:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.688826
+  Time: 2015-08-10 16:55:30 [191:413:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.691993
+  Time: 2015-08-10 16:55:30 [194:413:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.695182
+  Time: 2015-08-10 16:55:30 [197:413:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.698471
+  Time: 2015-08-10 16:55:30 [200:413:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.701614
+  Time: 2015-08-10 16:55:30 [203:413:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.704778
+  Time: 2015-08-10 16:55:30 [207:414:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.707970
+  Time: 2015-08-10 16:55:30 [210:414:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.711322
+  Time: 2015-08-10 16:55:30 [213:414:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.714537
+  Time: 2015-08-10 16:55:30 [216:414:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.717808
+  Time: 2015-08-10 16:55:30 [220:414:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.720948
+  Time: 2015-08-10 16:55:30 [223:414:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.724298
+  Time: 2015-08-10 16:55:30 [226:415:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.727409
+  Time: 2015-08-10 16:55:30 [229:415:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.730627
+  Time: 2015-08-10 16:55:30 [232:415:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.733849
+  Time: 2015-08-10 16:55:30 [236:415:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.737160
+  Time: 2015-08-10 16:55:30 [239:415:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.740354
+  Time: 2015-08-10 16:55:30 [242:416:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.743472
+  Time: 2015-08-10 16:55:30 [245:416:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.746763
+  Time: 2015-08-10 16:55:30 [249:416:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.749978
+  Time: 2015-08-10 16:55:30 [252:416:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.753295
+  Time: 2015-08-10 16:55:30 [255:416:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.756443
+  Time: 2015-08-10 16:55:30 [258:416:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.759649
+  Time: 2015-08-10 16:55:30 [261:417:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.762964
+  Time: 2015-08-10 16:55:30 [265:417:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.766134
+  Time: 2015-08-10 16:55:30 [268:417:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.769353
+  Time: 2015-08-10 16:55:30 [271:417:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.772483
+  Time: 2015-08-10 16:55:30 [274:417:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.775681
+  Time: 2015-08-10 16:55:30 [277:418:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.779173
+  Time: 2015-08-10 16:55:30 [281:418:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.782222
+  Time: 2015-08-10 16:55:30 [284:418:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.785327
+  Time: 2015-08-10 16:55:30 [287:418:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.788576
+  Time: 2015-08-10 16:55:30 [290:418:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.791765
+  Time: 2015-08-10 16:55:30 [294:418:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.795070
+  Time: 2015-08-10 16:55:30 [297:419:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.798213
+  Time: 2015-08-10 16:55:30 [300:419:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.801519
+  Time: 2015-08-10 16:55:30 [303:419:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.804768
+  Time: 2015-08-10 16:55:30 [307:419:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.807932
+  Time: 2015-08-10 16:55:30 [310:419:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.811306
+  Time: 2015-08-10 16:55:30 [313:420:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.814474
+  Time: 2015-08-10 16:55:30 [316:420:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.817814
+  Time: 2015-08-10 16:55:30 [320:420:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.820932
+  Time: 2015-08-10 16:55:30 [323:420:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.824085
+  Time: 2015-08-10 16:55:30 [326:420:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.827200
+  Time: 2015-08-10 16:55:30 [329:420:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.830418
+  Time: 2015-08-10 16:55:30 [332:421:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.833599
+  Time: 2015-08-10 16:55:30 [335:421:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.836810
+  Time: 2015-08-10 16:55:30 [339:421:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.840036
+  Time: 2015-08-10 16:55:30 [342:421:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.843186
+  Time: 2015-08-10 16:55:30 [345:421:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.846366
+  Time: 2015-08-10 16:55:30 [348:422:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.849611
+  Time: 2015-08-10 16:55:30 [351:422:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.852767
+  Time: 2015-08-10 16:55:30 [355:422:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.855990
+  Time: 2015-08-10 16:55:30 [358:422:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.859197
+  Time: 2015-08-10 16:55:30 [361:422:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.862353
+  Time: 2015-08-10 16:55:30 [364:422:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.865616
+  Time: 2015-08-10 16:55:30 [367:423:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.868755
+  Time: 2015-08-10 16:55:30 [371:423:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.871944
+  Time: 2015-08-10 16:55:30 [374:423:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.875172
+  Time: 2015-08-10 16:55:30 [377:423:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.878422
+  Time: 2015-08-10 16:55:30 [380:423:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.881546
+  Time: 2015-08-10 16:55:30 [383:424:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.884766
+  Time: 2015-08-10 16:55:30 [387:424:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.887992
+  Time: 2015-08-10 16:55:30 [390:424:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.891186
+  Time: 2015-08-10 16:55:30 [393:424:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.894359
+  Time: 2015-08-10 16:55:30 [396:424:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.897575
+  Time: 2015-08-10 16:55:30 [399:425:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.900781
+  Time: 2015-08-10 16:55:30 [403:425:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.904001
+  Time: 2015-08-10 16:55:30 [406:425:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.907198
+  Time: 2015-08-10 16:55:30 [409:425:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.910429
+  Time: 2015-08-10 16:55:30 [412:425:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.913574
+  Time: 2015-08-10 16:55:30 [415:425:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.916893
+  Time: 2015-08-10 16:55:30 [419:426:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.920095
+  Time: 2015-08-10 16:55:30 [422:426:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.923281
+  Time: 2015-08-10 16:55:30 [425:426:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.926536
+  Time: 2015-08-10 16:55:30 [428:426:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.929650
+  Time: 2015-08-10 16:55:30 [431:426:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.932877
+  Time: 2015-08-10 16:55:30 [435:427:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.936047
+  Time: 2015-08-10 16:55:30 [438:427:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.939217
+  Time: 2015-08-10 16:55:30 [441:427:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.942491
+  Time: 2015-08-10 16:55:30 [444:427:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.945610
+  Time: 2015-08-10 16:55:30 [447:427:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.948891
+  Time: 2015-08-10 16:55:30 [451:427:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.952013
+  Time: 2015-08-10 16:55:30 [454:428:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.955411
+  Time: 2015-08-10 16:55:30 [457:428:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.958856
+  Time: 2015-08-10 16:55:30 [461:428:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.962252
+  Time: 2015-08-10 16:55:30 [464:428:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.965266
+  Time: 2015-08-10 16:55:30 [467:428:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.968290
+  Time: 2015-08-10 16:55:30 [470:429:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.971694
+  Time: 2015-08-10 16:55:30 [474:429:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.974914
+  Time: 2015-08-10 16:55:30 [477:429:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.978137
+  Time: 2015-08-10 16:55:30 [480:429:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.981424
+  Time: 2015-08-10 16:55:30 [483:429:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.984680
+  Time: 2015-08-10 16:55:30 [487:430:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.987913
+  Time: 2015-08-10 16:55:30 [490:430:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.991048
+  Time: 2015-08-10 16:55:30 [493:430:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.994279
+  Time: 2015-08-10 16:55:30 [496:430:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177433.997460
+  Time: 2015-08-10 16:55:30 [499:430:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.000674
+  Time: 2015-08-10 16:55:30 [503:430:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.003957
+  Time: 2015-08-10 16:55:30 [506:431:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.007284
+  Time: 2015-08-10 16:55:30 [509:431:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.010540
+  Time: 2015-08-10 16:55:30 [512:431:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.013730
+  Time: 2015-08-10 16:55:30 [516:431:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.016927
+  Time: 2015-08-10 16:55:30 [519:431:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.020117
+  Time: 2015-08-10 16:55:30 [522:432:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.023400
+  Time: 2015-08-10 16:55:30 [525:432:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.026711
+  Time: 2015-08-10 16:55:30 [529:432:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.029900
+  Time: 2015-08-10 16:55:30 [532:432:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.033024
+  Time: 2015-08-10 16:55:30 [535:432:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.036265
+  Time: 2015-08-10 16:55:30 [538:432:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.039534
+  Time: 2015-08-10 16:55:30 [541:433:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.042652
+  Time: 2015-08-10 16:55:30 [544:433:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.045986
+  Time: 2015-08-10 16:55:30 [548:433:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.049090
+  Time: 2015-08-10 16:55:30 [551:433:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.052411
+  Time: 2015-08-10 16:55:30 [554:433:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.055573
+  Time: 2015-08-10 16:55:30 [557:434:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.058805
+  Time: 2015-08-10 16:55:30 [561:434:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.062003
+  Time: 2015-08-10 16:55:30 [564:434:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.065193
+  Time: 2015-08-10 16:55:30 [567:434:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.068491
+  Time: 2015-08-10 16:55:30 [570:434:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.071646
+  Time: 2015-08-10 16:55:30 [573:434:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.074978
+  Time: 2015-08-10 16:55:30 [577:435:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.078120
+  Time: 2015-08-10 16:55:30 [580:435:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.081384
+  Time: 2015-08-10 16:55:30 [583:435:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.084619
+  Time: 2015-08-10 16:55:30 [586:435:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.087841
+  Time: 2015-08-10 16:55:30 [590:435:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.091120
+  Time: 2015-08-10 16:55:30 [593:436:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.094320
+  Time: 2015-08-10 16:55:30 [596:436:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.097504
+  Time: 2015-08-10 16:55:30 [599:436:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.100673
+  Time: 2015-08-10 16:55:30 [603:436:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.103900
+  Time: 2015-08-10 16:55:30 [606:436:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.107219
+  Time: 2015-08-10 16:55:30 [609:437:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.110344
+  Time: 2015-08-10 16:55:30 [612:437:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.113515
+  Time: 2015-08-10 16:55:30 [615:437:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.116787
+  Time: 2015-08-10 16:55:30 [619:437:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.119955
+  Time: 2015-08-10 16:55:30 [622:437:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.123354
+  Time: 2015-08-10 16:55:30 [625:437:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.126618
+  Time: 2015-08-10 16:55:30 [628:438:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.129906
+  Time: 2015-08-10 16:55:30 [632:438:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.133064
+  Time: 2015-08-10 16:55:30 [635:438:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.136266
+  Time: 2015-08-10 16:55:30 [638:438:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.139427
+  Time: 2015-08-10 16:55:30 [641:438:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.142734
+  Time: 2015-08-10 16:55:30 [645:439:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.145912
+  Time: 2015-08-10 16:55:30 [648:439:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.149322
+  Time: 2015-08-10 16:55:30 [651:439:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.152537
+  Time: 2015-08-10 16:55:30 [654:439:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.155730
+  Time: 2015-08-10 16:55:30 [658:439:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.158981
+  Time: 2015-08-10 16:55:30 [661:439:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.162305
+  Time: 2015-08-10 16:55:30 [664:440:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.165489
+  Time: 2015-08-10 16:55:30 [667:440:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.168943
+  Time: 2015-08-10 16:55:30 [671:440:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.172193
+  Time: 2015-08-10 16:55:30 [674:440:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.175280
+  Time: 2015-08-10 16:55:30 [677:440:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.178599
+  Time: 2015-08-10 16:55:30 [680:441:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.181947
+  Time: 2015-08-10 16:55:30 [684:441:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.185233
+  Time: 2015-08-10 16:55:30 [687:441:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.188456
+  Time: 2015-08-10 16:55:30 [690:441:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.191812
+  Time: 2015-08-10 16:55:30 [694:441:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.195257
+  Time: 2015-08-10 16:55:30 [697:442:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.198623
+  Time: 2015-08-10 16:55:30 [700:442:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.201756
+  Time: 2015-08-10 16:55:30 [704:442:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.204975
+  Time: 2015-08-10 16:55:30 [707:442:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.208219
+  Time: 2015-08-10 16:55:30 [710:442:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.211483
+  Time: 2015-08-10 16:55:30 [713:442:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.214911
+  Time: 2015-08-10 16:55:30 [717:443:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.218174
+  Time: 2015-08-10 16:55:30 [720:443:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.221265
+  Time: 2015-08-10 16:55:30 [723:443:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.224407
+  Time: 2015-08-10 16:55:30 [726:443:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.227746
+  Time: 2015-08-10 16:55:30 [730:443:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.230827
+  Time: 2015-08-10 16:55:30 [733:444:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.234031
+  Time: 2015-08-10 16:55:30 [736:444:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.237190
+  Time: 2015-08-10 16:55:30 [739:444:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.240377
+  Time: 2015-08-10 16:55:30 [742:444:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.243647
+  Time: 2015-08-10 16:55:30 [745:444:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.246852
+  Time: 2015-08-10 16:55:30 [749:445:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.250217
+  Time: 2015-08-10 16:55:30 [752:445:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.253402
+  Time: 2015-08-10 16:55:30 [755:445:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.256446
+  Time: 2015-08-10 16:55:30 [758:445:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.259721
+  Time: 2015-08-10 16:55:30 [762:445:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.262926
+  Time: 2015-08-10 16:55:30 [765:445:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.266033
+  Time: 2015-08-10 16:55:30 [768:446:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.269193
+  Time: 2015-08-10 16:55:30 [771:446:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.272347
+  Time: 2015-08-10 16:55:30 [774:446:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.275579
+  Time: 2015-08-10 16:55:30 [777:446:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.278859
+  Time: 2015-08-10 16:55:30 [781:446:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.281973
+  Time: 2015-08-10 16:55:30 [784:447:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.285149
+  Time: 2015-08-10 16:55:30 [787:447:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.288363
+  Time: 2015-08-10 16:55:30 [790:447:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.291590
+  Time: 2015-08-10 16:55:30 [793:447:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.294780
+  Time: 2015-08-10 16:55:30 [797:447:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.298011
+  Time: 2015-08-10 16:55:30 [800:447:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.301115
+  Time: 2015-08-10 16:55:30 [803:448:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.304261
+  Time: 2015-08-10 16:55:30 [806:448:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.307400
+  Time: 2015-08-10 16:55:30 [809:448:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.310597
+  Time: 2015-08-10 16:55:30 [812:448:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.313803
+  Time: 2015-08-10 16:55:30 [816:448:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.316998
+  Time: 2015-08-10 16:55:30 [819:449:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.320237
+  Time: 2015-08-10 16:55:30 [822:449:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.323361
+  Time: 2015-08-10 16:55:30 [825:449:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.326576
+  Time: 2015-08-10 16:55:30 [828:449:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.329791
+  Time: 2015-08-10 16:55:30 [832:449:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.333009
+  Time: 2015-08-10 16:55:30 [835:449:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.336254
+  Time: 2015-08-10 16:55:30 [838:450:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.339549
+  Time: 2015-08-10 16:55:30 [841:450:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.342636
+  Time: 2015-08-10 16:55:30 [844:450:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.345825
+  Time: 2015-08-10 16:55:30 [848:450:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.349228
+  Time: 2015-08-10 16:55:30 [851:450:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.674000
+  Time: 2015-08-10 16:55:31 [176:469:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.682012
+  Time: 2015-08-10 16:55:31 [184:469:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.689655
+  Time: 2015-08-10 16:55:31 [191:470:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.695382
+  Time: 2015-08-10 16:55:31 [197:470:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.699340
+  Time: 2015-08-10 16:55:31 [201:470:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.703101
+  Time: 2015-08-10 16:55:31 [205:471:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.707031
+  Time: 2015-08-10 16:55:31 [209:471:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.710818
+  Time: 2015-08-10 16:55:31 [213:471:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.714477
+  Time: 2015-08-10 16:55:31 [216:471:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.718326
+  Time: 2015-08-10 16:55:31 [220:471:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.721949
+  Time: 2015-08-10 16:55:31 [224:472:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.726030
+  Time: 2015-08-10 16:55:31 [228:472:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.729822
+  Time: 2015-08-10 16:55:31 [232:472:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.733547
+  Time: 2015-08-10 16:55:31 [235:472:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.737482
+  Time: 2015-08-10 16:55:31 [239:473:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.741119
+  Time: 2015-08-10 16:55:31 [243:473:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.744916
+  Time: 2015-08-10 16:55:31 [247:473:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.748529
+  Time: 2015-08-10 16:55:31 [250:473:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.752294
+  Time: 2015-08-10 16:55:31 [254:473:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.755643
+  Time: 2015-08-10 16:55:31 [257:474:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.758728
+  Time: 2015-08-10 16:55:31 [261:474:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.761896
+  Time: 2015-08-10 16:55:31 [264:474:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.765039
+  Time: 2015-08-10 16:55:31 [267:474:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.768012
+  Time: 2015-08-10 16:55:31 [270:474:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.771242
+  Time: 2015-08-10 16:55:31 [273:474:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.774381
+  Time: 2015-08-10 16:55:31 [276:475:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.777489
+  Time: 2015-08-10 16:55:31 [279:475:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.780512
+  Time: 2015-08-10 16:55:31 [282:475:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.783764
+  Time: 2015-08-10 16:55:31 [286:475:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.787048
+  Time: 2015-08-10 16:55:31 [289:475:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.790109
+  Time: 2015-08-10 16:55:31 [292:476:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.793200
+  Time: 2015-08-10 16:55:31 [295:476:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.796270
+  Time: 2015-08-10 16:55:31 [298:476:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.799356
+  Time: 2015-08-10 16:55:31 [301:476:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.802602
+  Time: 2015-08-10 16:55:31 [304:476:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.805673
+  Time: 2015-08-10 16:55:31 [308:476:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.808734
+  Time: 2015-08-10 16:55:31 [311:477:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.811757
+  Time: 2015-08-10 16:55:31 [314:477:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.814648
+  Time: 2015-08-10 16:55:31 [316:477:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.817734
+  Time: 2015-08-10 16:55:31 [320:477:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.820847
+  Time: 2015-08-10 16:55:31 [323:477:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.824098
+  Time: 2015-08-10 16:55:31 [326:478:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.827245
+  Time: 2015-08-10 16:55:31 [329:478:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.830247
+  Time: 2015-08-10 16:55:31 [332:478:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.833306
+  Time: 2015-08-10 16:55:31 [335:478:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.836397
+  Time: 2015-08-10 16:55:31 [338:478:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.839493
+  Time: 2015-08-10 16:55:31 [341:478:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.842707
+  Time: 2015-08-10 16:55:31 [345:479:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.845819
+  Time: 2015-08-10 16:55:31 [348:479:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.848817
+  Time: 2015-08-10 16:55:31 [351:479:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.851853
+  Time: 2015-08-10 16:55:31 [354:479:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.854950
+  Time: 2015-08-10 16:55:31 [357:479:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.857983
+  Time: 2015-08-10 16:55:31 [360:479:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.860930
+  Time: 2015-08-10 16:55:31 [363:480:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.864028
+  Time: 2015-08-10 16:55:31 [366:480:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.866930
+  Time: 2015-08-10 16:55:31 [369:480:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.869899
+  Time: 2015-08-10 16:55:31 [372:480:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.872914
+  Time: 2015-08-10 16:55:31 [375:480:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.876065
+  Time: 2015-08-10 16:55:31 [378:480:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.879395
+  Time: 2015-08-10 16:55:31 [381:481:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.882555
+  Time: 2015-08-10 16:55:31 [384:481:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.885922
+  Time: 2015-08-10 16:55:31 [388:481:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.888820
+  Time: 2015-08-10 16:55:31 [391:481:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.891748
+  Time: 2015-08-10 16:55:31 [394:481:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.894656
+  Time: 2015-08-10 16:55:31 [396:482:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.897698
+  Time: 2015-08-10 16:55:31 [400:482:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.901033
+  Time: 2015-08-10 16:55:31 [403:482:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.904322
+  Time: 2015-08-10 16:55:31 [406:482:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.907419
+  Time: 2015-08-10 16:55:31 [409:482:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.910634
+  Time: 2015-08-10 16:55:31 [412:482:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.913693
+  Time: 2015-08-10 16:55:31 [416:483:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.916597
+  Time: 2015-08-10 16:55:31 [418:483:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.919522
+  Time: 2015-08-10 16:55:31 [421:483:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.922556
+  Time: 2015-08-10 16:55:31 [424:483:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.925968
+  Time: 2015-08-10 16:55:31 [428:483:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.929061
+  Time: 2015-08-10 16:55:31 [431:484:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.932141
+  Time: 2015-08-10 16:55:31 [434:484:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.935501
+  Time: 2015-08-10 16:55:31 [437:484:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.938486
+  Time: 2015-08-10 16:55:31 [440:484:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.941529
+  Time: 2015-08-10 16:55:31 [443:484:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.944691
+  Time: 2015-08-10 16:55:31 [447:484:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.948242
+  Time: 2015-08-10 16:55:31 [450:485:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.951327
+  Time: 2015-08-10 16:55:31 [453:485:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.954609
+  Time: 2015-08-10 16:55:31 [456:485:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.957478
+  Time: 2015-08-10 16:55:31 [459:485:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.960395
+  Time: 2015-08-10 16:55:31 [462:485:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.963464
+  Time: 2015-08-10 16:55:31 [465:485:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.966287
+  Time: 2015-08-10 16:55:31 [468:486:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.969435
+  Time: 2015-08-10 16:55:31 [471:486:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.972654
+  Time: 2015-08-10 16:55:31 [474:486:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.976208
+  Time: 2015-08-10 16:55:31 [478:486:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.979176
+  Time: 2015-08-10 16:55:31 [481:486:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.982078
+  Time: 2015-08-10 16:55:31 [484:487:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.985225
+  Time: 2015-08-10 16:55:31 [487:487:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.988319
+  Time: 2015-08-10 16:55:31 [490:487:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.991367
+  Time: 2015-08-10 16:55:31 [493:487:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.994589
+  Time: 2015-08-10 16:55:31 [496:487:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177434.997812
+  Time: 2015-08-10 16:55:31 [500:487:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.000931
+  Time: 2015-08-10 16:55:31 [503:488:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.003950
+  Time: 2015-08-10 16:55:31 [506:488:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.006888
+  Time: 2015-08-10 16:55:31 [509:488:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.009894
+  Time: 2015-08-10 16:55:31 [512:488:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.013023
+  Time: 2015-08-10 16:55:31 [515:488:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.016211
+  Time: 2015-08-10 16:55:31 [518:489:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.019306
+  Time: 2015-08-10 16:55:31 [521:489:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.022222
+  Time: 2015-08-10 16:55:31 [524:489:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.025425
+  Time: 2015-08-10 16:55:31 [527:489:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.028533
+  Time: 2015-08-10 16:55:31 [530:489:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.031761
+  Time: 2015-08-10 16:55:31 [534:489:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.034799
+  Time: 2015-08-10 16:55:31 [537:490:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.038295
+  Time: 2015-08-10 16:55:31 [540:490:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.041452
+  Time: 2015-08-10 16:55:31 [543:490:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.044704
+  Time: 2015-08-10 16:55:31 [547:490:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.047776
+  Time: 2015-08-10 16:55:31 [550:490:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.050685
+  Time: 2015-08-10 16:55:31 [553:491:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.053712
+  Time: 2015-08-10 16:55:31 [556:491:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.056855
+  Time: 2015-08-10 16:55:31 [559:491:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.060239
+  Time: 2015-08-10 16:55:31 [562:491:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.063582
+  Time: 2015-08-10 16:55:31 [565:491:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.066901
+  Time: 2015-08-10 16:55:31 [569:491:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.070064
+  Time: 2015-08-10 16:55:31 [572:492:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.073204
+  Time: 2015-08-10 16:55:31 [575:492:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.076286
+  Time: 2015-08-10 16:55:31 [578:492:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.079401
+  Time: 2015-08-10 16:55:31 [581:492:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.082417
+  Time: 2015-08-10 16:55:31 [584:492:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.085881
+  Time: 2015-08-10 16:55:31 [588:493:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.089100
+  Time: 2015-08-10 16:55:31 [591:493:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.092137
+  Time: 2015-08-10 16:55:31 [594:493:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.095225
+  Time: 2015-08-10 16:55:31 [597:493:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.098262
+  Time: 2015-08-10 16:55:31 [600:493:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.101191
+  Time: 2015-08-10 16:55:31 [603:493:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.104365
+  Time: 2015-08-10 16:55:31 [606:494:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.107646
+  Time: 2015-08-10 16:55:31 [609:494:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.110791
+  Time: 2015-08-10 16:55:31 [613:494:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.113804
+  Time: 2015-08-10 16:55:31 [616:494:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.116842
+  Time: 2015-08-10 16:55:31 [619:494:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.119909
+  Time: 2015-08-10 16:55:31 [622:494:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.122921
+  Time: 2015-08-10 16:55:31 [625:495:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.126085
+  Time: 2015-08-10 16:55:31 [628:495:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.129249
+  Time: 2015-08-10 16:55:31 [631:495:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.133089
+  Time: 2015-08-10 16:55:31 [635:495:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.394999
+  Time: 2015-08-10 16:55:31 [897:510:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.402867
+  Time: 2015-08-10 16:55:31 [905:511:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.410720
+  Time: 2015-08-10 16:55:31 [913:511:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.417646
+  Time: 2015-08-10 16:55:31 [919:511:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.423851
+  Time: 2015-08-10 16:55:31 [926:512:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.430381
+  Time: 2015-08-10 16:55:31 [932:512:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.436676
+  Time: 2015-08-10 16:55:31 [938:513:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.442852
+  Time: 2015-08-10 16:55:31 [945:513:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.447329
+  Time: 2015-08-10 16:55:31 [949:513:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.451306
+  Time: 2015-08-10 16:55:31 [953:513:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.455277
+  Time: 2015-08-10 16:55:31 [957:514:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.459262
+  Time: 2015-08-10 16:55:31 [961:514:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.463195
+  Time: 2015-08-10 16:55:31 [965:514:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.467247
+  Time: 2015-08-10 16:55:31 [969:514:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.471361
+  Time: 2015-08-10 16:55:31 [973:515:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.475051
+  Time: 2015-08-10 16:55:31 [977:515:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.478286
+  Time: 2015-08-10 16:55:31 [980:515:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.481521
+  Time: 2015-08-10 16:55:31 [983:515:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.484979
+  Time: 2015-08-10 16:55:31 [987:515:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.488222
+  Time: 2015-08-10 16:55:31 [990:516:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.491396
+  Time: 2015-08-10 16:55:31 [993:516:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.494746
+  Time: 2015-08-10 16:55:31 [997:516:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.497971
+  Time: 2015-08-10 16:55:32 [0:516:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.501217
+  Time: 2015-08-10 16:55:32 [3:516:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.504575
+  Time: 2015-08-10 16:55:32 [6:516:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.507733
+  Time: 2015-08-10 16:55:32 [10:517:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.510937
+  Time: 2015-08-10 16:55:32 [13:517:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.514195
+  Time: 2015-08-10 16:55:32 [16:517:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.517355
+  Time: 2015-08-10 16:55:32 [19:517:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.520487
+  Time: 2015-08-10 16:55:32 [22:517:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.523959
+  Time: 2015-08-10 16:55:32 [26:518:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.527150
+  Time: 2015-08-10 16:55:32 [29:518:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.530395
+  Time: 2015-08-10 16:55:32 [32:518:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.533710
+  Time: 2015-08-10 16:55:32 [36:518:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.536996
+  Time: 2015-08-10 16:55:32 [39:518:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.540163
+  Time: 2015-08-10 16:55:32 [42:518:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.543473
+  Time: 2015-08-10 16:55:32 [45:519:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.546578
+  Time: 2015-08-10 16:55:32 [48:519:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.549609
+  Time: 2015-08-10 16:55:32 [51:519:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.552697
+  Time: 2015-08-10 16:55:32 [54:519:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.555786
+  Time: 2015-08-10 16:55:32 [58:519:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.559036
+  Time: 2015-08-10 16:55:32 [61:520:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.562113
+  Time: 2015-08-10 16:55:32 [64:520:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.565565
+  Time: 2015-08-10 16:55:32 [67:520:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.568647
+  Time: 2015-08-10 16:55:32 [70:520:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.571904
+  Time: 2015-08-10 16:55:32 [74:520:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.574973
+  Time: 2015-08-10 16:55:32 [77:520:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.578041
+  Time: 2015-08-10 16:55:32 [80:521:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.581268
+  Time: 2015-08-10 16:55:32 [83:521:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.584481
+  Time: 2015-08-10 16:55:32 [86:521:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.587586
+  Time: 2015-08-10 16:55:32 [89:521:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.590742
+  Time: 2015-08-10 16:55:32 [93:521:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.593905
+  Time: 2015-08-10 16:55:32 [96:522:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.597054
+  Time: 2015-08-10 16:55:32 [99:522:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.600184
+  Time: 2015-08-10 16:55:32 [102:522:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.603492
+  Time: 2015-08-10 16:55:32 [105:522:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.606665
+  Time: 2015-08-10 16:55:32 [108:522:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.609802
+  Time: 2015-08-10 16:55:32 [112:522:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.612877
+  Time: 2015-08-10 16:55:32 [115:523:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.615970
+  Time: 2015-08-10 16:55:32 [118:523:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.619123
+  Time: 2015-08-10 16:55:32 [121:523:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.622350
+  Time: 2015-08-10 16:55:32 [124:523:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.625783
+  Time: 2015-08-10 16:55:32 [128:523:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.629108
+  Time: 2015-08-10 16:55:32 [131:524:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.632411
+  Time: 2015-08-10 16:55:32 [134:524:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.635686
+  Time: 2015-08-10 16:55:32 [137:524:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.638858
+  Time: 2015-08-10 16:55:32 [141:524:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.642103
+  Time: 2015-08-10 16:55:32 [144:524:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.645427
+  Time: 2015-08-10 16:55:32 [147:524:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.648661
+  Time: 2015-08-10 16:55:32 [150:525:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.651979
+  Time: 2015-08-10 16:55:32 [154:525:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.655199
+  Time: 2015-08-10 16:55:32 [157:525:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.658398
+  Time: 2015-08-10 16:55:32 [160:525:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.661669
+  Time: 2015-08-10 16:55:32 [163:525:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.665063
+  Time: 2015-08-10 16:55:32 [167:526:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.668333
+  Time: 2015-08-10 16:55:32 [170:526:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.671640
+  Time: 2015-08-10 16:55:32 [173:526:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.674829
+  Time: 2015-08-10 16:55:32 [177:526:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.678024
+  Time: 2015-08-10 16:55:32 [180:526:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.681259
+  Time: 2015-08-10 16:55:32 [183:527:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.684599
+  Time: 2015-08-10 16:55:32 [186:527:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.687888
+  Time: 2015-08-10 16:55:32 [190:527:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.691139
+  Time: 2015-08-10 16:55:32 [193:527:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.694312
+  Time: 2015-08-10 16:55:32 [196:527:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.697406
+  Time: 2015-08-10 16:55:32 [199:527:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.700564
+  Time: 2015-08-10 16:55:32 [202:528:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.703861
+  Time: 2015-08-10 16:55:32 [206:528:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.707021
+  Time: 2015-08-10 16:55:32 [209:528:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.710077
+  Time: 2015-08-10 16:55:32 [212:528:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.713144
+  Time: 2015-08-10 16:55:32 [215:528:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.716170
+  Time: 2015-08-10 16:55:32 [218:529:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.719266
+  Time: 2015-08-10 16:55:32 [221:529:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.722304
+  Time: 2015-08-10 16:55:32 [224:529:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.725518
+  Time: 2015-08-10 16:55:32 [227:529:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.728526
+  Time: 2015-08-10 16:55:32 [230:529:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.731528
+  Time: 2015-08-10 16:55:32 [233:529:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.734518
+  Time: 2015-08-10 16:55:32 [236:530:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.737565
+  Time: 2015-08-10 16:55:32 [239:530:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.740532
+  Time: 2015-08-10 16:55:32 [242:530:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.743661
+  Time: 2015-08-10 16:55:32 [245:530:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.746773
+  Time: 2015-08-10 16:55:32 [249:530:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.749803
+  Time: 2015-08-10 16:55:32 [252:530:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.752934
+  Time: 2015-08-10 16:55:32 [255:531:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.755930
+  Time: 2015-08-10 16:55:32 [258:531:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.758925
+  Time: 2015-08-10 16:55:32 [261:531:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.762122
+  Time: 2015-08-10 16:55:32 [264:531:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.765378
+  Time: 2015-08-10 16:55:32 [267:531:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.768537
+  Time: 2015-08-10 16:55:32 [270:532:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.771554
+  Time: 2015-08-10 16:55:32 [273:532:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.774549
+  Time: 2015-08-10 16:55:32 [276:532:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.777665
+  Time: 2015-08-10 16:55:32 [279:532:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.780661
+  Time: 2015-08-10 16:55:32 [282:532:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.783870
+  Time: 2015-08-10 16:55:32 [286:532:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.787006
+  Time: 2015-08-10 16:55:32 [289:533:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.790161
+  Time: 2015-08-10 16:55:32 [292:533:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.793185
+  Time: 2015-08-10 16:55:32 [295:533:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.796404
+  Time: 2015-08-10 16:55:32 [298:533:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.799473
+  Time: 2015-08-10 16:55:32 [301:533:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.802479
+  Time: 2015-08-10 16:55:32 [304:533:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.805712
+  Time: 2015-08-10 16:55:32 [308:534:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.808715
+  Time: 2015-08-10 16:55:32 [311:534:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.811710
+  Time: 2015-08-10 16:55:32 [314:534:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.814664
+  Time: 2015-08-10 16:55:32 [316:534:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.817805
+  Time: 2015-08-10 16:55:32 [320:534:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.820955
+  Time: 2015-08-10 16:55:32 [323:535:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.824302
+  Time: 2015-08-10 16:55:32 [326:535:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.827413
+  Time: 2015-08-10 16:55:32 [329:535:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.830596
+  Time: 2015-08-10 16:55:32 [332:535:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.833785
+  Time: 2015-08-10 16:55:32 [336:535:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.836974
+  Time: 2015-08-10 16:55:32 [339:535:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.840103
+  Time: 2015-08-10 16:55:32 [342:536:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.843499
+  Time: 2015-08-10 16:55:32 [345:536:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.846641
+  Time: 2015-08-10 16:55:32 [348:536:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.849647
+  Time: 2015-08-10 16:55:32 [351:536:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.852665
+  Time: 2015-08-10 16:55:32 [354:536:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.855688
+  Time: 2015-08-10 16:55:32 [357:536:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.858726
+  Time: 2015-08-10 16:55:32 [361:537:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.861916
+  Time: 2015-08-10 16:55:32 [364:537:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.865184
+  Time: 2015-08-10 16:55:32 [367:537:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.868191
+  Time: 2015-08-10 16:55:32 [370:537:700]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.871263
+  Time: 2015-08-10 16:55:32 [373:537:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.874486
+  Time: 2015-08-10 16:55:32 [376:538:0]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.877520
+  Time: 2015-08-10 16:55:32 [379:538:200]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.880680
+  Time: 2015-08-10 16:55:32 [382:538:400]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.883972
+  Time: 2015-08-10 16:55:32 [386:538:600]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.887024
+  Time: 2015-08-10 16:55:32 [389:538:800]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.890018
+  Time: 2015-08-10 16:55:32 [392:538:900]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.893013
+  Time: 2015-08-10 16:55:32 [395:539:100]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.896058
+  Time: 2015-08-10 16:55:32 [398:539:300]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177435.899413
+  Time: 2015-08-10 16:55:32 [401:539:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+OVR Error:
+  OVRTime: 177436.807939
+  Time: 2015-08-10 16:55:33 [310:591:500]
+  Code: -1003 -- ovrError_Timeout
+  System error: -2005270527 (887a0001) -- (unknown)
+  Description: Fence ReleaseSync
+
+ 
+(Filename:  Line: 46)
+
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460 (ID=0xe22)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\AsyncIO.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\AsyncIO.dll into Unity Child Domain
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll (this message is harmless)
+Loading C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\NetMQ.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 3000x1920 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\VirtualVisionUnity\3DEyeTracker\virtualvision_Data\Managed\System.dll (this message is harmless)
+[CAPI] LibOVR module is located at C:\Windows\system32\LibOVRRT32_0_6.dll
+
+ 
+(Filename:  Line: 46)
+
+SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+  at System.Net.Sockets.Socket.Bind (System.Net.EndPoint local_end) [0x00000] in <filename unknown>:0 
+  at AsyncIO.DotNet.NativeSocket.Bind (System.Net.IPEndPoint localEndPoint) [0x00000] in <filename unknown>:0 
+  at NetMQ.Core.Transports.Tcp.TcpListener.SetAddress (System.String addr) [0x00000] in <filename unknown>:0 
+Rethrow as NetMQException: Exception of type 'NetMQ.NetMQException' was thrown.
+  at NetMQ.Core.Transports.Tcp.TcpListener.SetAddress (System.String addr) [0x00000] in <filename unknown>:0 
+  at NetMQ.Core.SocketBase.Bind (System.String addr) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at NetMQ.ReceivingSocketExtensions.TryReceiveFrameString (IReceivingSocket socket, TimeSpan timeout, System.Text.Encoding encoding, System.String& frameString, System.Boolean& more) [0x00000] in <filename unknown>:0 
+  at NetMQ.ReceivingSocketExtensions.TryReceiveFrameString (IReceivingSocket socket, System.String& frameString) [0x00000] in <filename unknown>:0 
+  at HUDImageScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: f18 -> priority: 1 
+  Thread -> id: 1770 -> priority: 1 
+OVR Error:
+  OVRTime: 177451.309986
+  Time: 2015-08-10 16:55:47 [813:421:0]
+  Code: -1003 -- ovrError_Timeout
+  Description: Semaphore WaitForSingleObject
+
+ 
+(Filename:  Line: 46)
 
